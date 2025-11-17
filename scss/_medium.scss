@@ -1,0 +1,64 @@
+/* NAVIGATION STUFF GOES HERE  */
+#navWrapper {
+
+  nav {
+    width: 100vw;
+    background-color: $navBG;
+  }
+  ul {
+    li {
+      &.active {
+        background-color: darken($navBG,20%);
+      }
+      
+      a {
+        img {
+          margin: 0 auto;
+        }
+        svg {
+          display: none;
+        }
+        span {
+          display: block;
+          color: $Lfont;
+        }
+      }
+    }
+  }
+}
+
+
+section {
+  padding: 0;
+  margin: 0;
+}
+#two, #four {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  h2 {
+    flex-basis: 100%;
+  }
+  
+  div {
+    max-width: 45%;
+    text-align: center;
+    
+    img {
+      width: 90%;
+      height: auto;
+    }
+  }
+}
+#two {
+  background-color: $panel2;
+}
+
+footer div {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+

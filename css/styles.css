@@ -321,20 +321,6 @@ body {
   margin: 0;
 }
 
-/* --------------------------- HEADER --------------------------- */
-header {
-  display: grid;
-  grid-template-columns: 50px auto;
-  column-gap: 10px;
-  align-items: center;
-  padding: 0.5rem 10px;
-}
-header span {
-  font-size: 1.6rem;
-  font-weight: 300;
-  color: #303030;
-}
-
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 #navWrapper {
   position: fixed;
@@ -370,10 +356,6 @@ header span {
   padding: 0.75rem;
   text-decoration: none;
 }
-#navWrapper ul li a img {
-  display: block;
-  margin: 0 auto;
-}
 #navWrapper ul li a svg {
   width: 25px;
   height: auto;
@@ -384,26 +366,6 @@ header span {
 }
 
 /* --------------------------- MAIN --------------------------- */
-main h1 {
-  padding: 1rem 10px 0.5rem 10px;
-  font-size: 1.5rem;
-  color: #303030;
-  margin: 0;
-}
-main h2 {
-  margin: 0;
-  padding: 10px;
-}
-main h1,
-main h2 {
-  font-weight: 500;
-  text-align: center;
-}
-main p {
-  padding: 0.5rem 10px;
-  color: #333;
-  line-height: 150%;
-}
 main section {
   height: 100vh;
   font-weight: 300;
@@ -420,9 +382,6 @@ main section {
   align-items: center;
   text-align: center;
 }
-#one h1 {
-  font-size: 2.5rem;
-}
 
 #two, #four {
   padding: 0 10px;
@@ -433,26 +392,10 @@ main section {
   flex-direction: column;
   align-items: center;
 }
-#two div, #four div {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  margin: 10px auto;
-  box-sizing: border-box;
-}
-#two div img, #four div img {
-  display: block;
-  margin: 0 auto;
-  width: 70%;
-  height: auto;
-}
 
 #two {
   background-color: #99D0C9;
   text-align: center;
-}
-#two div {
-  border: 1px solid #ECECEC;
 }
 
 #four {
@@ -460,90 +403,15 @@ main section {
   color: #ECECEC;
   text-align: center;
 }
-#four div {
-  border: 1px solid #ECECEC;
-  color: #ECECEC;
-}
-#four div p {
-  color: #ECECEC;
-}
 
 #three {
   background-color: #71ACB0;
   color: #303030;
 }
-#three ul {
-  list-style-type: none;
-}
-#three li {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-}
 
 #five {
   background-color: #315A72;
   color: #ECECEC;
-}
-#five form.myForm {
-  margin: 1rem 10px;
-}
-#five form.myForm label {
-  display: block;
-  font-size: 1rem;
-  color: #C0EEE4;
-  padding-top: 0.5rem;
-}
-#five form.myForm label span {
-  margin-left: 0.5rem;
-}
-#five form.myForm h3 {
-  font-size: 1.2rem;
-  color: #ECECEC;
-  margin: 1.5rem 0 0.2rem 0;
-  padding-top: 0.7rem;
-  border-bottom: 1px solid #71ACB0;
-}
-#five form.myForm input[type=text],
-#five form.myForm input[type=tel],
-#five form.myForm input[type=number],
-#five form.myForm input[type=email],
-#five form.myForm input[type=password],
-#five form.myForm select {
-  color: #303030;
-  display: block;
-  margin: 0.1rem 0 1rem 0;
-  border: 1px solid #71ACB0;
-  font-size: 1rem;
-  width: 250px;
-  padding: 0.5rem 10px;
-}
-#five form.myForm input:is([type=text],
-[type=email],
-[type=tel],
-[type=number],
-[type=password]):is(:-webkit-autofill, :autofill) {
-  transition: background-color 9999s ease-in-out 0s;
-  -webkit-text-fill-color: #303030;
-}
-#five form.myForm input:is([type=text],
-[type=email],
-[type=tel],
-[type=number],
-[type=password]):is(:-webkit-autofill, :autofill) {
-  -webkit-text-fill-color: #303030 !important;
-}
-#five form.myForm #submit {
-  border: none;
-  background-color: #303030;
-  color: #ECECEC;
-  margin: 1rem 0;
-  width: 250px;
-  font-size: 1.2rem;
-  -webkit-appearance: none;
-  appearance: none;
-  padding: 1rem 0;
 }
 
 /* --------------------------- FOOTER --------------------------- */
@@ -602,9 +470,6 @@ footer p.legal {
   #navWrapper ul li.active {
     background-color: #121212;
   }
-  #navWrapper ul li a img {
-    margin: 0 auto;
-  }
   #navWrapper ul li a svg {
     display: none;
   }
@@ -615,23 +480,6 @@ footer p.legal {
   section {
     padding: 0;
     margin: 0;
-  }
-  #two, #four {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  #two h2, #four h2 {
-    flex-basis: 100%;
-  }
-  #two div, #four div {
-    max-width: 45%;
-    text-align: center;
-  }
-  #two div img, #four div img {
-    width: 90%;
-    height: auto;
   }
   #two {
     background-color: #99D0C9;
@@ -683,12 +531,9 @@ footer p.legal {
   body {
     display: grid;
     grid-template-columns: 250px auto;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: "nav header" "nav main" "nav footer";
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "nav main" "nav footer";
     min-height: 100vh;
-  }
-  #headerWrapper {
-    grid-area: header;
   }
   #mainWrapper {
     grid-area: main;
@@ -699,15 +544,5 @@ footer p.legal {
   footer div {
     display: grid;
     grid-template-columns: auto auto auto;
-  }
-  #two, #four {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #two div, #four div {
-    max-width: 28%;
-  }
-  #two div img, #four div img {
-    width: 50%;
   }
 }

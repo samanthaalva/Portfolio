@@ -24,24 +24,6 @@ body {
   margin: 0;
 }
 
-/* --------------------------- HEADER --------------------------- */
-
-header {
-  display: grid;
-  grid-template-columns: 50px auto;
-  column-gap: $gutter;
-  align-items: center; //vertically
-  padding: 0.5rem $gutter;
-
-  span {
-    font-size: 1.6rem;
-    font-weight: $lightWeight;
-    color: $Dfont;
-  }
-}
-
-// end header
-
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 
 #navWrapper {
@@ -80,11 +62,6 @@ header {
         padding: 0.75rem;
         text-decoration: none;
 
-        img {
-          display: block;
-          margin: 0 auto;
-        }
-
         svg {
           width: 25px;
           height: auto;
@@ -101,32 +78,6 @@ header {
 
 /* --------------------------- MAIN --------------------------- */
 main {
-  h1 {
-    padding: 1rem $gutter 0.5rem $gutter;
-    font-size: 1.5rem;
-    color: $Dfont;
-
-    margin: 0;
-  }
-
-  h2 {
-    margin: 0;
-    padding: $gutter;
-
-  }
-
-  h1,
-  h2 {
-    font-weight: $normalWeight;
-    text-align: center;
-  }
-
-  p {
-    padding: 0.5rem $gutter;
-    color: #333;
-    line-height: $leading;
-  }
-
   section {
     height: 100vh;
     font-weight: $lightWeight;
@@ -147,10 +98,6 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-
-  h1 {
-    font-size: 2.5rem;
-  }
 }
 
 //Card sections
@@ -162,131 +109,26 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  div {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    margin: 10px auto;
-    box-sizing: border-box;
-    
-    img {
-      display: block;
-      margin: 0 auto;
-      width: 70%;
-      height: auto;
-    }
-  }
 }
 #two {
   background-color: $panel2;
   text-align: center;
-  div {
-    border: 1px solid $Lfont;
-  }
 }
 #four {
 background-color: $panel4;
 color: $Lfont;
 text-align:center;
-div {
-  border: 1px solid $Lfont;
-  color: $Lfont;
-  p {
-    color: $Lfont;
-  }
-}
 }
 
 //Career Goals section
 #three {
   background-color: $panel3;
   color: $Dfont;
-  ul {
-    list-style-type: none;
-  }
-  li {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-  }
 }
 
 #five {
   background-color: $panel5;
   color: $Lfont;
-  form.myForm {
-    margin: 1rem $gutter;
-  
-
-   label {
-    display: block;
-    font-size: 1rem;
-    color: $panel1;
-    padding-top: 0.5rem;
-
-    span {
-      margin-left: 0.5rem;
-    }
-  }
-
-  h3 {
-    font-size: 1.2rem;
-    color: $Lfont;
-    margin: 1.5rem 0 0.2rem 0;
-    padding-top: 0.7rem;
-    border-bottom: 1px solid $panel3;
-  }
-
-  input[type="text"],
-  input[type="tel"],
-  input[type="number"],
-  input[type="email"],
-  input[type="password"],
-  select {
-    color: $Dfont;
-    display: block;
-    margin: 0.1rem 0 1rem 0;
-    border: 1px solid $panel3;
-    font-size: 1rem;
-    width: 250px;
-    padding: 0.5rem $gutter;
-  }
-
-  input:is(
-      [type="text"],
-      [type="email"],
-      [type="tel"],
-      [type="number"],
-      [type="password"]
-    ):is(:-webkit-autofill, :autofill) {
-    transition: background-color 9999s ease-in-out 0s; // prevent flash of autofill color
-    -webkit-text-fill-color: $Dfont; // set text color for autofill
-  }
-
-  input:is(
-      [type="text"],
-      [type="email"],
-      [type="tel"],
-      [type="number"],
-      [type="password"]
-    ):is(:-webkit-autofill, :autofill) {
-    -webkit-text-fill-color: $Dfont !important;
-  }
-
-  #submit {
-    border: none;
-    background-color: $Dfont;
-    color: $Lfont;
-    margin: 1rem 0;
-    width: 250px;
-    font-size: 1.2rem;
-    -webkit-appearance: none;
-    appearance: none;
-    padding: 1rem 0;
-  }
-}
 }
 
 /* --------------------------- FOOTER --------------------------- */

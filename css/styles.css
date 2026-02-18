@@ -374,6 +374,7 @@ main section {
   scroll-margin-top: 4rem;
 }
 
+/* --------------------------- SECTION ONE --------------------------- */
 #one {
   background-color: #C0EEE4;
   color: #303030;
@@ -480,22 +481,26 @@ main section {
   align-items: center;
 }
 
+/* --------------------------- SECTION TWO --------------------------- */
 #two {
   background-color: #99D0C9;
   text-align: center;
 }
 
+/* --------------------------- SECTION THREE --------------------------- */
 #three {
   background-color: #71ACB0;
   color: #303030;
 }
 
+/* --------------------------- SECTION FOUR --------------------------- */
 #four {
   background-color: #4B8D9E;
   color: #ECECEC;
   text-align: center;
 }
 
+/* --------------------------- SECTION FIVE --------------------------- */
 #five {
   background-color: #315A72;
   color: #ECECEC;

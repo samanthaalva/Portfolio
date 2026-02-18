@@ -315,7 +315,7 @@ html {
 
 /* --------------------------- BODY --------------------------- */
 body {
-  font-family: "Spline Sans", sans-serif;
+  font-family: "Josefin Slab", serif;
   font-weight: 300;
   min-width: 320px;
   margin: 0;
@@ -367,10 +367,11 @@ body {
 
 /* --------------------------- MAIN --------------------------- */
 main section {
-  height: 100vh;
+  min-height: 100vh;
   font-weight: 300;
   padding: 10px;
   box-sizing: border-box;
+  scroll-margin-top: 4rem;
 }
 
 #one {
@@ -381,9 +382,95 @@ main section {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: calc(4rem + 10px);
+}
+#one h1,
+#one h2 {
+  font-weight: 500;
+}
+#one button {
+  font-size: 25px;
+  background-color: #4B8D9E;
+  border: none;
+  padding: 0.5rem 2rem;
+  margin: 2rem 0;
+  color: white;
+  border-radius: 5px;
+  font-family: "Josefin Sans", serif;
+  font-weight: 300;
+  transition: transform 300ms ease;
+  transform: scale(1);
+}
+#one button:hover {
+  background-color: #315A72;
+  transform: scale(1.1);
 }
 
-#two, #four {
+@media only screen and (max-height: 780px) {
+  #one {
+    justify-content: flex-start;
+  }
+}
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #315A72;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2rem 10px 0 0;
+  transition: transform 300ms ease;
+  transform: scale(1);
+}
+.social a:hover {
+  background-color: #4B8D9E;
+  transform: scale(1.1);
+}
+
+.social a img {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.experienceCarosel {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.experienceCarosel::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.experienceCarosel .group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 10s infinite linear;
+}
+.experienceCarosel .group .card {
+  flex: 0 0 5em;
+  height: 5rem;
+  padding: 0.5rem;
+  text-align: center;
+  align-content: center;
+  padding-right: 1rem;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+#two,
+#four {
   padding: 0 10px;
   color: #303030;
   min-height: 100vh;
@@ -398,15 +485,15 @@ main section {
   text-align: center;
 }
 
+#three {
+  background-color: #71ACB0;
+  color: #303030;
+}
+
 #four {
   background-color: #4B8D9E;
   color: #ECECEC;
   text-align: center;
-}
-
-#three {
-  background-color: #71ACB0;
-  color: #303030;
 }
 
 #five {

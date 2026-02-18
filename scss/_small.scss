@@ -1,5 +1,6 @@
 @import 'variables';
 
+// Global document behavior and reset-like setup
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
@@ -17,6 +18,7 @@ html {
 // end all elements
 
 /* --------------------------- BODY --------------------------- */
+// Base typography and minimum page width
 body {
   font-family: $defaultFont;
   font-weight: $lightWeight;
@@ -25,6 +27,7 @@ body {
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+// Sticky top nav container and nested nav/link styles
 
 #navWrapper {
   position: fixed;
@@ -77,12 +80,14 @@ body {
 }
 
 /* --------------------------- MAIN --------------------------- */
+// Shared section sizing and spacing defaults
 main {
   section {
-    height: 100vh;
+    min-height: 100vh;
     font-weight: $lightWeight;
     padding: $gutter;
     box-sizing: border-box;
+    scroll-margin-top: 4rem;
   }
 }
 
@@ -90,6 +95,7 @@ main {
 
 
 //Introductory section
+// Hero section content, heading weight, and CTA button styles
 #one {
   background-color: $panel1;
   color: $Dfont;
@@ -98,10 +104,133 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: calc(4rem + #{$gutter});
+
+
+  h1,
+  h2 {
+    font-weight: $normalWeight;
+  }
+
+  button {
+    font-size: 25px;
+    background-color: $panel4;
+    border: none;
+    padding: .5rem 2rem;
+    margin: 2rem 0;
+    color: white;
+    border-radius: 5px;
+    font-family: $sansFont;
+    font-weight: $lightWeight;
+
+    transition: transform 300ms ease;
+    transform: scale(1);
+
+    &:hover {
+      background-color: $panel5;
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media only screen and (max-height: 780px) {
+  #one {
+    justify-content: flex-start;
+  }
+}
+
+// Social icon button wrappers and hover interaction
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $panel5;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2rem $gutter 0 0;
+
+  transition: transform 300ms ease;
+  transform: scale(1);
+
+  &:hover {
+    background-color: $panel4;
+    transform: scale(1.1);
+  }
+}
+
+// Icon image sizing inside social anchors
+.social a img {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+// Previous carousel-image approach kept for reference
+// .experienceCarosel img {
+//   display: inline-block;
+//   width: 40px;
+//   height: 40px;
+//   background-color: $panel5;
+//   padding: 5px;
+//   border-radius: 5px;
+//   margin: 0 $gutter 0 0;
+
+//   transition: transform 300ms ease;
+//   transform: scale(1);
+//   &:hover {
+//    background-color: $panel4;
+//    transform: scale(1.1);
+//   }
+// }
+
+// Horizontal skill carousel container and animated groups
+.experienceCarosel {
+  margin: 0 auto;
+  width: 90%;
+  //border: 5px red solid;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 10s infinite linear;
+
+    .card {
+      flex: 0 0 5em;
+      height: 5rem;
+      padding: .5rem;
+      text-align: center;
+      align-content: center;
+      padding-right: 1rem;
+    }
+  }
+}
+
+// Carousel movement keyframes
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+
+  to {
+    translate: -100%;
+  }
 }
 
 //Card sections
-#two, #four {
+// Shared card panel setup for sections two and four
+#two,
+#four {
   padding: 0 $gutter;
   color: $Dfont;
   min-height: 100vh;
@@ -110,20 +239,24 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
 #two {
   background-color: $panel2;
   text-align: center;
 }
-#four {
-background-color: $panel4;
-color: $Lfont;
-text-align:center;
-}
+
 
 //Career Goals section
+// Individual panel colors and text contrast
 #three {
   background-color: $panel3;
   color: $Dfont;
+}
+
+#four {
+  background-color: $panel4;
+  color: $Lfont;
+  text-align: center;
 }
 
 #five {
@@ -132,6 +265,7 @@ text-align:center;
 }
 
 /* --------------------------- FOOTER --------------------------- */
+// Footer wrapper colors
 #footerWrapper {
   background-color: $Dfont;
   color: $Lfont;
@@ -139,12 +273,13 @@ text-align:center;
 
 //End of footer wrapper
 
+// Footer content blocks (contact, social, location, legal)
 footer {
   color: white;
   padding: 0.5rem $gutter;
 
-
   section.contact {
+    // Contact text and icon/link styling
     p {
       font-size: 1.2rem;
       margin: .5rem;
@@ -167,6 +302,7 @@ footer {
     display: flex;
     justify-content: center;
 
+    // Social icon links inside footer
     a {
       display: block;
       font-size: 2rem;
@@ -180,7 +316,6 @@ footer {
     }
 
     // a
-
   }
 
   // End of social

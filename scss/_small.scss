@@ -100,7 +100,12 @@ main {
   align-items: center;
   text-align: center;
   padding-top: calc(4rem + #{$gutter});
-
+  
+  #profilePic {
+    border-radius: 10px;
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+  }
+    
 
   h1,
   h2 {
@@ -117,6 +122,7 @@ main {
     border-radius: 5px;
     font-family: $sansFont;
     font-weight: $lightWeight;
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));
 
     transition: transform 300ms ease;
     transform: scale(1);

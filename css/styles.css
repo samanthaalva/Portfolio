@@ -385,6 +385,10 @@ main section {
   text-align: center;
   padding-top: calc(4rem + 10px);
 }
+#one #profilePic {
+  border-radius: 10px;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+}
 #one h1,
 #one h2 {
   font-weight: 500;
@@ -399,6 +403,7 @@ main section {
   border-radius: 5px;
   font-family: "Josefin Sans", serif;
   font-weight: 300;
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));
   transition: transform 300ms ease;
   transform: scale(1);
 }

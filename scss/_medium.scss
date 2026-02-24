@@ -4,20 +4,26 @@
   nav {
     width: 100vw;
     background-color: $navBG;
+
   }
+
   ul {
     li {
+
       &.active {
-        background-color: darken($navBG,20%);
+        background-color: darken($navBG, 20%);
       }
-      
+
       a {
+        
         svg {
           display: none;
         }
+
         span {
           display: block;
           color: $Lfont;
+          font-size: 1.1rem;
         }
       }
     }
@@ -29,14 +35,94 @@ section {
   padding: 0;
   margin: 0;
 }
+
+
+
+
+/* --------------------------- SECTION ONE --------------------------- */
+#one {
+  padding-top: calc(4rem + #{$gutter});
+
+  #profilePic {
+    border-radius: 10px;
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+    width: 90%;
+    height: auto;
+  }
+
+
+  h1,
+  h2 {
+    font-weight: $normalWeight;
+  }
+
+  button {
+    font-size: 30px;
+
+    padding: 1rem 2.5rem;
+    margin: 2rem 0;
+
+  }
+}
+
+
+//.SOCIAL ICONS
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $panel5;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2rem $gutter 0 0;
+
+  transition: transform 300ms ease;
+  transform: scale(1);
+
+  &:hover {
+    background-color: $panel4;
+    transform: scale(1.1);
+  }
+}
+
+
+.social a img {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+//CAROUSEL
+.experienceCarosel {
+  margin: 0 auto;
+  width: 90%;
+  //border: 5px red solid;
+
+
+  .group {
+
+    .card {
+      flex: 0 0 5em;
+      height: 5rem;
+      padding: .5rem;
+      text-align: center;
+      align-content: center;
+      padding-right: 1rem;
+    }
+  }
+}
+
+
+/* --------------------------- SECTION TWO --------------------------- */
+
+
+
 #two {
   background-color: $panel2;
 }
 
 footer div {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
 }
-
-

@@ -57,6 +57,38 @@ body {
     grid-area: main;
 }
 
+/* --------------------------- SECTION ONE --------------------------- */
+#one {
+    display: grid;
+    grid-template-columns: minmax(420px, 1fr)minmax(420px, 1fr);
+    gap: 3rem;
+    align-items: center;
+    button {
+        font-size: 2.5rem;
+        padding: 1.2rem 3rem;
+    }
+    h1 {
+        font-size: 3.2rem;
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 2.3rem;
+    }
+}
+.social a {
+    padding: 10px;
+    margin: 2rem 1.5rem 2rem 0;
+    img {
+        width: 50px;
+        height: auto;
+    }
+}
+
+#one #profilePic {
+    width: 65%;
+    height: auto;
+}
+
 #footerWrapper {
     grid-area: footer;
 }

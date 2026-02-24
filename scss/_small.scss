@@ -35,10 +35,12 @@ body {
   z-index: 100;
   width: 100%;
   background-color: $navBG;
+  
 
   nav {
     width: 100vw;
     background-color: $navBG;
+    
   }
 
   ul {
@@ -62,6 +64,7 @@ body {
         text-align: center;
         padding: 0.75rem;
         text-decoration: none;
+        
 
         svg {
           width: 25px;

@@ -36,6 +36,7 @@
                 span {
                     display: block;
                     margin-top: 0.5rem;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -61,7 +62,7 @@ body {
 #one {
     display: grid;
     grid-template-columns: minmax(420px, 1fr)minmax(420px, 1fr);
-    gap: 3rem;
+    //gap: 1rem;
     align-items: center;
     button {
         font-size: 2.5rem;
@@ -88,6 +89,33 @@ body {
     width: 65%;
     height: auto;
 }
+
+//CAROUSEL
+.experienceCarosel {
+  margin: 0 auto;
+  width: 100%;
+  //border: 5px red solid;
+  img {
+    width: 80px;
+    height: auto;
+  }
+
+
+  .group {
+    
+    .card {
+      flex: 0 0 5em;
+      height: 7rem;
+      padding: .5rem;
+      text-align: center;
+      align-content: center;
+      padding-right: 1rem;
+    }
+  }
+}
+
+//
+
 
 #footerWrapper {
     grid-area: footer;

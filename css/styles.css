@@ -676,6 +676,7 @@ footer p.legal {
   #navWrapper ul li a span {
     display: block;
     margin-top: 0.5rem;
+    font-size: 1.5rem;
   }
   /* BODY STUFF GOES HERE  */
   body {
@@ -692,7 +693,6 @@ footer p.legal {
   #one {
     display: grid;
     grid-template-columns: minmax(420px, 1fr) minmax(420px, 1fr);
-    gap: 3rem;
     align-items: center;
   }
   #one button {
@@ -717,6 +717,22 @@ footer p.legal {
   #one #profilePic {
     width: 65%;
     height: auto;
+  }
+  .experienceCarosel {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .experienceCarosel img {
+    width: 80px;
+    height: auto;
+  }
+  .experienceCarosel .group .card {
+    flex: 0 0 5em;
+    height: 7rem;
+    padding: 0.5rem;
+    text-align: center;
+    align-content: center;
+    padding-right: 1rem;
   }
   #footerWrapper {
     grid-area: footer;

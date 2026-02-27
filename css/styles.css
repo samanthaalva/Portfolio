@@ -490,6 +490,44 @@ main section {
 #two {
   background-color: #99D0C9;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#two .aboutContent {
+  order: 1;
+}
+#two h1 {
+  font-weight: 500;
+  margin-top: 30px;
+}
+#two .swiper {
+  order: 2;
+  width: 90%;
+  height: auto;
+  margin-top: 0.1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+  --swiper-theme-color: $panel5;
+  --swiper-pagination-color: #99D0C9;
+  --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.5);
+  --swiper-pagination-bullet-inactive-opacity: 2;
+}
+#two .swiper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#two div.about {
+  margin: 40px 10px 10px 10px;
+}
+#two div.about p {
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+  text-align: left;
+}
+#two div.about p:last-child {
+  margin-bottom: 0;
 }
 
 /* --------------------------- SECTION THREE --------------------------- */
@@ -632,7 +670,31 @@ footer p.legal {
   }
   /* --------------------------- SECTION TWO --------------------------- */
   #two {
+    padding: 0 1.5rem;
     background-color: #99D0C9;
+    display: flex;
+    flex-direction: column;
+  }
+  #two .aboutContent {
+    order: 1;
+  }
+  #two h1 {
+    font-size: 2.5rem;
+  }
+  #two .swiper {
+    order: 2;
+    width: 60%;
+    max-width: 900px;
+    margin: 0.5rem auto 0;
+  }
+  #two div.about {
+    max-width: 900px;
+    margin: 2rem auto 1rem;
+  }
+  #two div.about p {
+    font-size: 1.4rem;
+    line-height: 1.55;
+    padding-bottom: 10px;
   }
   footer div {
     display: grid;
@@ -640,7 +702,7 @@ footer p.legal {
     align-items: center;
   }
 }
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 95rem) {
   /* NAVIGATION STUFF GOES HERE  */
   #navWrapper {
     position: fixed;
@@ -680,14 +742,13 @@ footer p.legal {
   }
   /* BODY STUFF GOES HERE  */
   body {
-    display: grid;
-    grid-template-columns: 250px auto;
-    grid-template-rows: 1fr auto;
-    grid-template-areas: "nav main" "nav footer";
+    display: block;
     min-height: 100vh;
   }
   #mainWrapper {
-    grid-area: main;
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    min-width: 0;
   }
   /* --------------------------- SECTION ONE --------------------------- */
   #one {
@@ -734,8 +795,55 @@ footer p.legal {
     align-content: center;
     padding-right: 1rem;
   }
+  /* --------------------------- SECTION TWO --------------------------- */
+  #two {
+    padding: 1.75rem 1.5rem;
+    min-height: 72vh;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 2rem;
+    align-items: center;
+  }
+  #two .swiper {
+    order: 0;
+    grid-column: 1;
+    width: 90%;
+    max-width: none;
+    margin-top: 2rem;
+    align-self: center;
+    overflow: hidden;
+  }
+  #two .swiper .swiper-slide,
+  #two .swiper .swiper-slide img {
+    height: 100%;
+  }
+  #two .swiper .swiper-slide img {
+    object-fit: cover;
+  }
+  #two .aboutContent {
+    order: 0;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    align-self: start;
+  }
+  #two .aboutContent h1 {
+    margin-top: 3rem;
+    text-align: left;
+  }
+  #two div.about {
+    max-width: none;
+    margin: 0;
+    padding-top: 0;
+  }
+  #two div.about p {
+    font-size: 1.2rem;
+    line-height: 1.55;
+  }
   #footerWrapper {
-    grid-area: footer;
+    margin-left: 250px;
+    width: calc(100% - 250px);
   }
   footer div {
     display: grid;

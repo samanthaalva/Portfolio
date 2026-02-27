@@ -35,12 +35,12 @@ body {
   z-index: 100;
   width: 100%;
   background-color: $navBG;
-  
+
 
   nav {
     width: 100vw;
     background-color: $navBG;
-    
+
   }
 
   ul {
@@ -64,7 +64,7 @@ body {
         text-align: center;
         padding: 0.75rem;
         text-decoration: none;
-        
+
 
         svg {
           width: 25px;
@@ -103,12 +103,12 @@ main {
   align-items: center;
   text-align: center;
   padding-top: calc(4rem + #{$gutter});
-  
+
   #profilePic {
     border-radius: 10px;
     filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
   }
-    
+
 
   h1,
   h2 {
@@ -244,21 +244,88 @@ main {
 }
 
 /* --------------------------- SECTION TWO --------------------------- */
+
 #two {
   background-color: $panel2;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+
+  .aboutContent {
+    order: 1;
+  }
+
+  h1 {
+    font-weight: $normalWeight;
+    margin-top: 30px;
+  }
+
+  .swiper {
+    order: 2;
+    width: 90%;
+    height: auto;
+    margin-top: .1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+    
+    
+
+    --swiper-theme-color: $panel5; // arrows + active pagination
+    --swiper-pagination-color: #99D0C9;
+    --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.5);
+    --swiper-pagination-bullet-inactive-opacity: 2;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+
+
+    }
+  }
+
+  div.about {
+    margin: 40px $gutter $gutter $gutter;
+    p {
+      margin: 0 0 1rem 0;
+      font-weight: $normalWeight;
+      text-align: left;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --------------------------- SECTION THREE --------------------------- */
 #three {
   background-color: $panel3;
   color: $Dfont;
 }
+
 /* --------------------------- SECTION FOUR --------------------------- */
 #four {
   background-color: $panel4;
   color: $Lfont;
   text-align: center;
 }
+
 /* --------------------------- SECTION FIVE --------------------------- */
 #five {
   background-color: $panel5;
@@ -277,6 +344,7 @@ footer {
   padding: 0.5rem $gutter;
 
   section.contact {
+
     // Contact text and icon/link styling
     p {
       font-size: 1.2rem;

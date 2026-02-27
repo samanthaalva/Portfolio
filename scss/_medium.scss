@@ -116,9 +116,39 @@ section {
 /* --------------------------- SECTION TWO --------------------------- */
 
 
-
 #two {
-  background-color: $panel2;
+    padding: 0 1.5rem;
+    background-color: $panel2;
+  display: flex;
+  flex-direction: column;
+
+  .aboutContent {
+    order: 1;
+  }
+
+    h1 {
+        font-size: 2.5rem;
+        
+    }
+
+    .swiper {
+    order: 2;
+        width: 60%;
+        max-width: 900px;
+        margin: 0.5rem auto 0;
+    }
+
+    div.about {
+        max-width: 900px;
+        margin: 2rem auto 1rem;
+        
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.55;
+            padding-bottom: $gutter;
+        }
+    }
 }
 
 footer div {

@@ -299,14 +299,14 @@ template {
   display: none;
 }
 
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   scroll-behavior: smooth;
 }
 
-/*  Apply a natural box layout model to all elements  */
+/* Apply a natural box layout model to all elements */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -508,6 +508,7 @@ main section {
   border-radius: 10px;
   overflow: hidden;
   filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+  margin-bottom: 30px;
   --swiper-theme-color: $panel5;
   --swiper-pagination-color: #99D0C9;
   --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.5);
@@ -519,10 +520,10 @@ main section {
   height: auto;
 }
 #two div.about {
-  margin: 40px 10px 10px 10px;
+  margin: 40px 10px 10px;
 }
 #two div.about p {
-  margin: 0 0 1rem 0;
+  margin: 0 0 1rem;
   font-weight: 500;
   text-align: left;
 }
@@ -533,7 +534,43 @@ main section {
 /* --------------------------- SECTION THREE --------------------------- */
 #three {
   background-color: #71ACB0;
-  color: #303030;
+}
+#three h1 {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+#three #dev, #three #design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+#three #dev h2, #three #design h2 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: white;
+}
+#three #dev #designBorder, #three #dev #devBorder, #three #design #designBorder, #three #design #devBorder {
+  width: 90%;
+  max-width: none;
+  border-radius: 10px;
+  padding: 0;
+  border: 3px solid white;
+}
+#three #dev #designBorder img, #three #dev #devBorder img, #three #design #designBorder img, #three #design #devBorder img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px 10px 0 0;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+}
+#three #dev #designBorder ul li, #three #dev #devBorder ul li, #three #design #designBorder ul li, #three #design #devBorder ul li {
+  color: white;
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  font-family: "Josefin Sans", serif;
 }
 
 /* --------------------------- SECTION FOUR --------------------------- */
@@ -685,7 +722,7 @@ footer p.legal {
     order: 2;
     width: 60%;
     max-width: 900px;
-    margin: 0.5rem auto 0;
+    margin: 0.5rem auto 30px auto;
   }
   #two div.about {
     max-width: 900px;
@@ -695,6 +732,13 @@ footer p.legal {
     font-size: 1.4rem;
     line-height: 1.55;
     padding-bottom: 10px;
+  }
+  /* --------------------------- SECTION THREE --------------------------- */
+  #three #dev #designBorder,
+  #three #dev #devBorder,
+  #three #design #designBorder,
+  #three #design #devBorder {
+    width: 60%;
   }
   footer div {
     display: grid;
@@ -809,6 +853,7 @@ footer p.legal {
     grid-column: 1;
     width: 90%;
     max-width: none;
+    max-height: 82vh;
     margin-top: 2rem;
     align-self: center;
     overflow: hidden;
@@ -818,7 +863,7 @@ footer p.legal {
     height: 100%;
   }
   #two .swiper .swiper-slide img {
-    object-fit: cover;
+    object-fit: contain;
   }
   #two .aboutContent {
     order: 0;
@@ -840,6 +885,52 @@ footer p.legal {
   #two div.about p {
     font-size: 1.2rem;
     line-height: 1.55;
+  }
+  /* --------------------------- SECTION THREE --------------------------- */
+  #three {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  #three h1 {
+    flex: 0 0 100%;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+  }
+  #three #dev, #three #design {
+    display: flex;
+    flex: 1 1 420px;
+    max-width: 45%;
+    flex-direction: column;
+  }
+  #three #dev h2, #three #design h2 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  #three #dev #designBorder, #three #dev #devBorder, #three #design #designBorder, #three #design #devBorder {
+    width: 90%;
+    max-width: none;
+    border-radius: 10px;
+    padding: 0;
+    border: 3px solid white;
+  }
+  #three #dev #designBorder img, #three #dev #devBorder img, #three #design #designBorder img, #three #design #devBorder img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+  }
+  #three #dev #designBorder ul li, #three #dev #devBorder ul li, #three #design #designBorder ul li, #three #design #devBorder ul li {
+    color: white;
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    font-family: "Josefin Sans", serif;
   }
   #footerWrapper {
     margin-left: 250px;

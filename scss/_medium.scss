@@ -1,21 +1,17 @@
 /* NAVIGATION STUFF GOES HERE  */
 #navWrapper {
-
   nav {
     width: 100vw;
     background-color: $navBG;
-
   }
 
   ul {
     li {
-
       &.active {
         background-color: darken($navBG, 20%);
       }
 
       a {
-        
         svg {
           display: none;
         }
@@ -36,9 +32,6 @@ section {
   margin: 0;
 }
 
-
-
-
 /* --------------------------- SECTION ONE --------------------------- */
 #one {
   padding-top: calc(4rem + #{$gutter});
@@ -58,15 +51,12 @@ section {
 
   button {
     font-size: 30px;
-
     padding: 1rem 2.5rem;
     margin: 2rem 0;
-
   }
 }
 
-
-//.SOCIAL ICONS
+// SOCIAL ICONS
 .social a {
   display: inline-flex;
   align-items: center;
@@ -85,26 +75,24 @@ section {
   }
 }
 
-
 .social a img {
   display: block;
   width: 40px;
   height: 40px;
 }
 
-//CAROUSEL
+// CAROUSEL
 .experienceCarosel {
   margin: 0 auto;
   width: 90%;
-  //border: 5px red solid;
+  // border: 5px red solid;
 
 
   .group {
-
     .card {
       flex: 0 0 5em;
       height: 5rem;
-      padding: .5rem;
+      padding: 0.5rem;
       text-align: center;
       align-content: center;
       padding-right: 1rem;
@@ -114,11 +102,9 @@ section {
 
 
 /* --------------------------- SECTION TWO --------------------------- */
-
-
 #two {
-    padding: 0 1.5rem;
-    background-color: $panel2;
+  padding: 0 1.5rem;
+  background-color: $panel2;
   display: flex;
   flex-direction: column;
 
@@ -126,29 +112,38 @@ section {
     order: 1;
   }
 
-    h1 {
-        font-size: 2.5rem;
-        
-    }
+  h1 {
+    font-size: 2.5rem;
+  }
 
-    .swiper {
+  .swiper {
     order: 2;
-        width: 60%;
-        max-width: 900px;
-        margin: 0.5rem auto 0;
-    }
+    width: 60%;
+    max-width: 900px;
+    margin: 0.5rem auto 30px auto;
+  }
 
-    div.about {
-        max-width: 900px;
-        margin: 2rem auto 1rem;
-        
+  div.about {
+    max-width: 900px;
+    margin: 2rem auto 1rem;
 
-        p {
-            font-size: 1.4rem;
-            line-height: 1.55;
-            padding-bottom: $gutter;
-        }
+    p {
+      font-size: 1.4rem;
+      line-height: 1.55;
+      padding-bottom: $gutter;
     }
+  }
+}
+
+/* --------------------------- SECTION THREE --------------------------- */
+#three {
+  #dev,
+  #design {
+    #designBorder,
+    #devBorder {
+      width: 60%;
+    }
+  }
 }
 
 footer div {

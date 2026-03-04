@@ -1,16 +1,7 @@
 /* NAVIGATION STUFF GOES HERE  */
 #navWrapper {
-  nav {
-    width: 100vw;
-    background-color: $navBG;
-  }
-
   ul {
     li {
-      &.active {
-        background-color: darken($navBG, 20%);
-      }
-
       a {
         svg {
           display: none;
@@ -34,19 +25,9 @@ section {
 
 /* --------------------------- SECTION ONE --------------------------- */
 #one {
-  padding-top: calc(4rem + #{$gutter});
-
   #profilePic {
-    border-radius: 10px;
-    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
     width: 90%;
     height: auto;
-  }
-
-
-  h1,
-  h2 {
-    font-weight: $normalWeight;
   }
 
   button {
@@ -56,61 +37,9 @@ section {
   }
 }
 
-// SOCIAL ICONS
-.social a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $panel5;
-  padding: 5px;
-  border-radius: 5px;
-  margin: 2rem $gutter 0 0;
-
-  transition: transform 300ms ease;
-  transform: scale(1);
-
-  &:hover {
-    background-color: $panel4;
-    transform: scale(1.1);
-  }
-}
-
-.social a img {
-  display: block;
-  width: 40px;
-  height: 40px;
-}
-
-// CAROUSEL
-.experienceCarosel {
-  margin: 0 auto;
-  width: 90%;
-  // border: 5px red solid;
-
-
-  .group {
-    .card {
-      flex: 0 0 5em;
-      height: 5rem;
-      padding: 0.5rem;
-      text-align: center;
-      align-content: center;
-      padding-right: 1rem;
-    }
-  }
-}
-
-
 /* --------------------------- SECTION TWO --------------------------- */
 #two {
   padding: 0 1.5rem;
-  background-color: $panel2;
-  display: flex;
-  flex-direction: column;
-
-  .aboutContent {
-    order: 1;
-  }
 
   h1 {
     font-size: 2.5rem;
@@ -142,6 +71,30 @@ section {
     #designBorder,
     #devBorder {
       width: 60%;
+    }
+  }
+}
+
+/* --------------------------- SECTION FOUR --------------------------- */
+#four {
+  #caseStudies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    row-gap: 0.5rem;
+
+    div {
+      flex: 0 0 50%;
+      margin: 0;
+      margin-top: 20px;
+      padding-top: 20px;
+      max-height: fit-content;
+      img {
+        width: 70%;
+        height: auto;
+      }
     }
   }
 }

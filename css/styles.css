@@ -373,6 +373,12 @@ main section {
   box-sizing: border-box;
   scroll-margin-top: 4rem;
 }
+main h1 {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 30px;
+}
 
 /* --------------------------- SECTION ONE --------------------------- */
 #one {
@@ -385,11 +391,13 @@ main section {
   text-align: center;
   padding-top: calc(4rem + 10px);
 }
+#one h1 {
+  color: #303030;
+}
 #one #profilePic {
   border-radius: 10px;
   filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
 }
-#one h1,
 #one h2 {
   font-weight: 500;
 }
@@ -490,15 +498,12 @@ main section {
 #two {
   background-color: #99D0C9;
   text-align: center;
-  display: flex;
-  flex-direction: column;
+}
+#two h1 {
+  color: #303030;
 }
 #two .aboutContent {
   order: 1;
-}
-#two h1 {
-  font-weight: 500;
-  margin-top: 30px;
 }
 #two .swiper {
   order: 2;
@@ -535,30 +540,33 @@ main section {
 #three {
   background-color: #71ACB0;
 }
-#three h1 {
-  color: white;
-  text-align: center;
-  font-weight: 500;
-}
-#three #dev, #three #design {
+#three #dev,
+#three #design {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 2rem 0;
 }
-#three #dev h2, #three #design h2 {
+#three #dev h2,
+#three #design h2 {
   font-weight: 500;
   margin-bottom: 1rem;
   color: white;
 }
-#three #dev #designBorder, #three #dev #devBorder, #three #design #designBorder, #three #design #devBorder {
+#three #dev #designBorder,
+#three #dev #devBorder,
+#three #design #designBorder,
+#three #design #devBorder {
   width: 90%;
   max-width: none;
   border-radius: 10px;
   padding: 0;
   border: 3px solid white;
 }
-#three #dev #designBorder img, #three #dev #devBorder img, #three #design #designBorder img, #three #design #devBorder img {
+#three #dev #designBorder img,
+#three #dev #devBorder img,
+#three #design #designBorder img,
+#three #design #devBorder img {
   display: block;
   width: 100%;
   height: auto;
@@ -566,7 +574,10 @@ main section {
   border-radius: 10px 10px 0 0;
   filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
 }
-#three #dev #designBorder ul li, #three #dev #devBorder ul li, #three #design #designBorder ul li, #three #design #devBorder ul li {
+#three #dev #designBorder ul li,
+#three #dev #devBorder ul li,
+#three #design #designBorder ul li,
+#three #design #devBorder ul li {
   color: white;
   font-size: 1.4rem;
   padding: 0.5rem 0;
@@ -578,6 +589,34 @@ main section {
   background-color: #4B8D9E;
   color: #ECECEC;
   text-align: center;
+}
+#four #caseStudies {
+  display: flex;
+  flex-direction: column;
+}
+#four #caseStudies div {
+  margin: 10px;
+  padding: 0;
+}
+#four #caseStudies div img {
+  border-radius: 10px;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+  width: 90%;
+  height: auto;
+}
+#four #caseStudies div h2 {
+  margin: 2rem 0 0;
+  line-height: 30px;
+  font-weight: 300;
+  font-family: "Josefin Sans", serif;
+}
+#four #caseStudies div:hover {
+  border: 3px solid white;
+  border-radius: 10px;
+}
+#four #caseStudies div:hover img {
+  transform: scale(1.05);
+  transition: transform 300ms ease;
 }
 
 /* --------------------------- SECTION FIVE --------------------------- */
@@ -633,15 +672,8 @@ footer p.legal {
   text-align: center;
 }
 
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 36rem) {
   /* NAVIGATION STUFF GOES HERE  */
-  #navWrapper nav {
-    width: 100vw;
-    background-color: #454545;
-  }
-  #navWrapper ul li.active {
-    background-color: #121212;
-  }
   #navWrapper ul li a svg {
     display: none;
   }
@@ -655,65 +687,18 @@ footer p.legal {
     margin: 0;
   }
   /* --------------------------- SECTION ONE --------------------------- */
-  #one {
-    padding-top: calc(4rem + 10px);
-  }
   #one #profilePic {
-    border-radius: 10px;
-    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
     width: 90%;
     height: auto;
-  }
-  #one h1,
-  #one h2 {
-    font-weight: 500;
   }
   #one button {
     font-size: 30px;
     padding: 1rem 2.5rem;
     margin: 2rem 0;
   }
-  .social a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #315A72;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 2rem 10px 0 0;
-    transition: transform 300ms ease;
-    transform: scale(1);
-  }
-  .social a:hover {
-    background-color: #4B8D9E;
-    transform: scale(1.1);
-  }
-  .social a img {
-    display: block;
-    width: 40px;
-    height: 40px;
-  }
-  .experienceCarosel {
-    margin: 0 auto;
-    width: 90%;
-  }
-  .experienceCarosel .group .card {
-    flex: 0 0 5em;
-    height: 5rem;
-    padding: 0.5rem;
-    text-align: center;
-    align-content: center;
-    padding-right: 1rem;
-  }
   /* --------------------------- SECTION TWO --------------------------- */
   #two {
     padding: 0 1.5rem;
-    background-color: #99D0C9;
-    display: flex;
-    flex-direction: column;
-  }
-  #two .aboutContent {
-    order: 1;
   }
   #two h1 {
     font-size: 2.5rem;
@@ -740,13 +725,33 @@ footer p.legal {
   #three #design #devBorder {
     width: 60%;
   }
+  /* --------------------------- SECTION FOUR --------------------------- */
+  #four #caseStudies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    row-gap: 0.5rem;
+  }
+  #four #caseStudies div {
+    flex: 0 0 50%;
+    margin: 0;
+    margin-top: 20px;
+    padding-top: 20px;
+    max-height: fit-content;
+  }
+  #four #caseStudies div img {
+    width: 70%;
+    height: auto;
+  }
   footer div {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
   }
 }
-@media only screen and (min-width: 95rem) {
+@media only screen and (min-width: 64rem) {
   /* NAVIGATION STUFF GOES HERE  */
   #navWrapper {
     position: fixed;
@@ -794,8 +799,12 @@ footer p.legal {
     width: calc(100% - 250px);
     min-width: 0;
   }
+  main section {
+    padding: 0.5rem 0.75rem;
+  }
   /* --------------------------- SECTION ONE --------------------------- */
   #one {
+    padding-top: 1rem;
     display: grid;
     grid-template-columns: minmax(420px, 1fr) minmax(420px, 1fr);
     align-items: center;
@@ -841,7 +850,7 @@ footer p.legal {
   }
   /* --------------------------- SECTION TWO --------------------------- */
   #two {
-    padding: 1.75rem 1.5rem;
+    padding: 0.75rem;
     min-height: 72vh;
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -882,23 +891,24 @@ footer p.legal {
     margin: 0;
     padding-top: 0;
   }
-  #two div.about p {
-    font-size: 1.2rem;
-    line-height: 1.55;
-  }
   /* --------------------------- SECTION THREE --------------------------- */
   #three {
+    min-height: auto;
+    padding: 0.5rem 0.75rem 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 1rem;
   }
   #three h1 {
     flex: 0 0 100%;
     color: white;
     text-align: center;
     font-weight: 500;
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    padding: 3rem 0 0 0;
   }
   #three #dev, #three #design {
     display: flex;
@@ -931,6 +941,29 @@ footer p.legal {
     font-size: 1.4rem;
     padding: 0.5rem 0;
     font-family: "Josefin Sans", serif;
+  }
+  /* --------------------------- SECTION FOUR --------------------------- */
+  #four {
+    min-height: auto;
+    padding: 0.5rem 0.75rem 1rem;
+  }
+  #four h1 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    padding: 3rem 0;
+  }
+  #four #caseStudies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    row-gap: 0.5rem;
+    padding: 0;
+  }
+  #four #caseStudies div {
+    flex: 0 0 33.333%;
+    margin: 0;
   }
   #footerWrapper {
     margin-left: 250px;

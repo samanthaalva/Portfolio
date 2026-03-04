@@ -83,6 +83,13 @@ main {
     box-sizing: border-box;
     scroll-margin-top: 4rem;
   }
+
+  h1 {
+    color: white;
+    text-align: center;
+    font-weight: $normalWeight;
+    margin-top: 30px;
+  }
 }
 
 /* --------------------------- SECTION ONE --------------------------- */
@@ -96,12 +103,15 @@ main {
   text-align: center;
   padding-top: calc(4rem + #{$gutter});
 
+  h1 {
+    color: $Dfont;
+  }
+
   #profilePic {
     border-radius: 10px;
     filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
   }
 
-  h1,
   h2 {
     font-weight: $normalWeight;
   }
@@ -161,7 +171,6 @@ main {
 .experienceCarosel {
   margin: 0 auto;
   width: 90%;
-  // border: 5px red solid;
   display: flex;
   overflow-x: auto;
   scrollbar-width: none;
@@ -215,16 +224,13 @@ main {
 #two {
   background-color: $panel2;
   text-align: center;
-  display: flex;
-  flex-direction: column;
+
+  h1 {
+    color: $Dfont;
+  }
 
   .aboutContent {
     order: 1;
-  }
-
-  h1 {
-    font-weight: $normalWeight;
-    margin-top: 30px;
   }
 
   .swiper {
@@ -267,12 +273,9 @@ main {
 /* --------------------------- SECTION THREE --------------------------- */
 #three {
   background-color: $panel3;
-  h1 {
-    color: white;
-    text-align: center;
-    font-weight: $normalWeight;
-  }
-  #dev, #design {
+
+  #dev,
+  #design {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,7 +287,8 @@ main {
       color: white;
     }
 
-    #designBorder, #devBorder {
+    #designBorder,
+    #devBorder {
       width: 90%;
       max-width: none;
       border-radius: 10px;
@@ -299,6 +303,7 @@ main {
         border-radius: 10px 10px 0 0;
         filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
       }
+
       ul li {
         color: white;
         font-size: 1.4rem;
@@ -314,6 +319,37 @@ main {
   background-color: $panel4;
   color: $Lfont;
   text-align: center;
+
+  #caseStudies {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      margin: 10px;
+      padding: 0;
+      img {
+        border-radius: 10px;
+        filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+        width: 90%;
+        height: auto;
+      }
+      h2 {
+        margin: 2rem 0 0;
+        line-height: 30px;
+        font-weight: $lightWeight;
+        font-family: $sansFont;
+      }
+    }
+
+    div:hover {
+      border: 3px solid white;
+      border-radius: 10px;
+      img {
+        transform: scale(1.05);
+        transition: transform 300ms ease;
+      }
+    }
+  }
 }
 
 /* --------------------------- SECTION FIVE --------------------------- */

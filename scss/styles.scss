@@ -5,11 +5,11 @@
 @import "small";
 
 // 35rem is also 560px (if base font is 16px)
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 36rem) {
 	@import "medium";
 }
 
 // 95rem is also 1520px (if base font is 16px)
-@media only screen and (min-width: 95rem) {
+@media only screen and (min-width: 64rem) {
 	@import "large";
 }

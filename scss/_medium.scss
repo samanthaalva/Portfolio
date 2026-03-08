@@ -108,10 +108,14 @@ footer div {
 /* --------------------------- MEDIA.HTML PAGE --------------------------- */
 #mediaMain {
   #content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1rem;
     gap: 1rem;
+
+    > * {
+      grid-column: 1 / -1;
+    }
 
     > h2,
     > h3,
@@ -121,9 +125,25 @@ footer div {
     }
 
     > .swiper {
-      flex: 0 1 82%;
-      max-width: 300px;
-      margin: 0 auto;
+      flex: 0 0 600px;
+      width: 600px;
+      max-width: 600px;
+      align-self: flex-start;
+      margin: 0 0 0 1rem;
+      padding-right: 2rem;
+      border-radius: 10px;
+      overflow: hidden;
+      box-sizing: border-box;
+
+      .swiper-wrapper,
+      .swiper-slide,
+      .swiper-slide img {
+        border-radius: 10px;
+      }
+
+      .swiper-slide {
+        overflow: hidden;
+      }
     }
 
     .firstThreeRow {
@@ -142,6 +162,25 @@ footer div {
         height: auto;
         margin: 0;
       }
+    }
+
+    // media4.webp and media5.webp (the two images after firstThreeRow paragraph)
+    > .firstThreeRow + p + img {
+      grid-column: 1;
+      justify-self: center;
+      width: 280px;
+      max-width: 280px;
+      height: auto;
+      margin: 0;
+    }
+
+    > .firstThreeRow + p + img + img {
+      grid-column: 2;
+      justify-self: center;
+      width: 280px;
+      max-width: 280px;
+      height: auto;
+      margin: 0;
     }
 
     .turningPointRow {
@@ -169,9 +208,9 @@ footer div {
       }
 
       > img {
-        flex: 0 0 280px;
-        max-width: 280px;
-        width: 40%;
+        flex: 0 0 380px;
+        max-width: 380px;
+        width: 380px;
         height: auto;
         margin: 0;
         padding: 3rem 1rem 0 0;
@@ -189,6 +228,14 @@ footer div {
       gap: 0.9rem;
       padding: 0 1rem;
       overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+      }
 
       > img {
         flex: 0 0 170px;
@@ -212,6 +259,40 @@ footer div {
       width: 100%;
       height: auto;
       margin: 0;
+    }
+
+    // Put My Final Results + My Discoveries text on the left.
+    > .turningPointRow + h3,
+    > .turningPointRow + h3 + p,
+    > .turningPointRow + h3 + p + .swiper + h3,
+    > .turningPointRow + h3 + p + .swiper + h3 + p {
+      grid-column: 1;
+      max-width: none;
+      padding-right: 1rem;
+    }
+
+    // Keep swiper on the right under media10 and beside both text blocks.
+    > .turningPointRow + h3 + p + .swiper {
+      grid-column: 2;
+      grid-row: span 4;
+      width: 380px;
+      max-width: 380px;
+      align-self: flex-start;
+      justify-self: end;
+      margin: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      box-sizing: border-box;
+
+      .swiper-wrapper,
+      .swiper-slide,
+      .swiper-slide img {
+        border-radius: 10px;
+      }
+
+      .swiper-slide {
+        overflow: hidden;
+      }
     }
   }
 }

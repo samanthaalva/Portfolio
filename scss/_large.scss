@@ -270,3 +270,8 @@ footer div {
     grid-template-columns: auto auto auto;
 }
 
+/* --------------------------- MEDIA.HTML PAGE --------------------------- */
+#mediaMain .hero {
+    height: clamp(160px, 22vw, 220px);
+}
+

@@ -667,6 +667,15 @@ footer p.legal {
 }
 
 /* --------------------------- MEDIA.HTML PAGE --------------------------- */
+#mediaBody {
+  font-family: "Kufam", sans-serif;
+}
+
+#mediaMain img {
+  border-radius: 10px;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+}
+
 #mediaMain .hero {
   position: relative;
   width: 100%;
@@ -689,6 +698,7 @@ footer p.legal {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 0;
 }
 
 #mediaMain .hero h1,
@@ -713,6 +723,11 @@ footer p.legal {
 #content {
   padding: 10px;
 }
+#content p {
+  line-height: 1.5;
+  font-weight: 280;
+  color: #303030;
+}
 #content > img {
   display: block;
   width: 80%;
@@ -733,6 +748,10 @@ footer p.legal {
   max-width: 360px;
   height: auto;
   margin: 0;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35));
+}
+#content .phaseFourRow > img {
+  filter: none;
 }
 #content .turningPointRow {
   display: flex;
@@ -852,10 +871,13 @@ footer p.legal {
   }
   /* --------------------------- MEDIA.HTML PAGE --------------------------- */
   #mediaMain #content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1rem;
     gap: 1rem;
+  }
+  #mediaMain #content > * {
+    grid-column: 1/-1;
   }
   #mediaMain #content > h2,
   #mediaMain #content > h3,
@@ -864,9 +886,23 @@ footer p.legal {
     padding: 0 1rem;
   }
   #mediaMain #content > .swiper {
-    flex: 0 1 82%;
-    max-width: 300px;
-    margin: 0 auto;
+    flex: 0 0 600px;
+    width: 600px;
+    max-width: 600px;
+    align-self: flex-start;
+    margin: 0 0 0 1rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  #mediaMain #content > .swiper .swiper-wrapper,
+  #mediaMain #content > .swiper .swiper-slide,
+  #mediaMain #content > .swiper .swiper-slide img {
+    border-radius: 10px;
+  }
+  #mediaMain #content > .swiper .swiper-slide {
+    overflow: hidden;
   }
   #mediaMain #content .firstThreeRow {
     display: flex;
@@ -880,6 +916,22 @@ footer p.legal {
     flex: 0 1 calc(33.333% - 1rem);
     max-width: 240px;
     width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  #mediaMain #content > .firstThreeRow + p + img {
+    grid-column: 1;
+    justify-self: center;
+    width: 280px;
+    max-width: 280px;
+    height: auto;
+    margin: 0;
+  }
+  #mediaMain #content > .firstThreeRow + p + img + img {
+    grid-column: 2;
+    justify-self: center;
+    width: 280px;
+    max-width: 280px;
     height: auto;
     margin: 0;
   }
@@ -905,9 +957,9 @@ footer p.legal {
     margin-top: 0.6rem;
   }
   #mediaMain #content .turningPointRow > img {
-    flex: 0 0 280px;
-    max-width: 280px;
-    width: 40%;
+    flex: 0 0 380px;
+    max-width: 380px;
+    width: 380px;
     height: auto;
     margin: 0;
     padding: 3rem 1rem 0 0;
@@ -922,6 +974,13 @@ footer p.legal {
     gap: 0.9rem;
     padding: 0 1rem;
     overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  #mediaMain #content .phaseFourRow::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
   }
   #mediaMain #content .phaseFourRow > img {
     flex: 0 0 170px;
@@ -942,6 +1001,34 @@ footer p.legal {
     width: 100%;
     height: auto;
     margin: 0;
+  }
+  #mediaMain #content > .turningPointRow + h3,
+  #mediaMain #content > .turningPointRow + h3 + p,
+  #mediaMain #content > .turningPointRow + h3 + p + .swiper + h3,
+  #mediaMain #content > .turningPointRow + h3 + p + .swiper + h3 + p {
+    grid-column: 1;
+    max-width: none;
+    padding-right: 1rem;
+  }
+  #mediaMain #content > .turningPointRow + h3 + p + .swiper {
+    grid-column: 2;
+    grid-row: span 4;
+    width: 380px;
+    max-width: 380px;
+    align-self: flex-start;
+    justify-self: end;
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  #mediaMain #content > .turningPointRow + h3 + p + .swiper .swiper-wrapper,
+  #mediaMain #content > .turningPointRow + h3 + p + .swiper .swiper-slide,
+  #mediaMain #content > .turningPointRow + h3 + p + .swiper .swiper-slide img {
+    border-radius: 10px;
+  }
+  #mediaMain #content > .turningPointRow + h3 + p + .swiper .swiper-slide {
+    overflow: hidden;
   }
 }
 @media only screen and (min-width: 64rem) {
@@ -1165,5 +1252,9 @@ footer p.legal {
   footer div {
     display: grid;
     grid-template-columns: auto auto auto;
+  }
+  /* --------------------------- MEDIA.HTML PAGE --------------------------- */
+  #mediaMain .hero {
+    height: clamp(160px, 22vw, 220px);
   }
 }

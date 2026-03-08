@@ -410,6 +410,15 @@ footer {
 }
 
 /* --------------------------- MEDIA.HTML PAGE --------------------------- */
+#mediaBody {
+  font-family: "Kufam", sans-serif;
+}
+
+#mediaMain img {
+  border-radius: 10px;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+}
+
 #mediaMain .hero {
   position: relative;
   width: 100%;
@@ -432,6 +441,7 @@ footer {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 0;
 }
 
 #mediaMain .hero h1,
@@ -457,6 +467,12 @@ footer {
 #content {
   padding: $gutter;
 
+  p {
+    line-height: 1.5;
+    font-weight: 280;
+    color: $Dfont;
+  }
+
   > img {
     display: block;
     width: 80%;
@@ -477,9 +493,13 @@ footer {
       max-width: 360px;
       height: auto;
       margin: 0;
+      filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35));
     }
   }
 
+  .phaseFourRow > img {
+    filter: none;
+  }
   .turningPointRow {
     display: flex;
     flex-direction: column;

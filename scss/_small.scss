@@ -272,7 +272,7 @@ main {
 
 /* --------------------------- SECTION THREE --------------------------- */
 #three {
-  background-color: $panel3;
+  background-color: $panel4;
 
   #dev,
   #design {
@@ -316,7 +316,7 @@ main {
 
 /* --------------------------- SECTION FOUR --------------------------- */
 #four {
-  background-color: $panel4;
+  background-color: $panel5;
   color: $Lfont;
   text-align: center;
 
@@ -350,12 +350,6 @@ main {
       }
     }
   }
-}
-
-/* --------------------------- SECTION FIVE --------------------------- */
-#five {
-  background-color: $panel5;
-  color: $Lfont;
 }
 
 /* --------------------------- FOOTER --------------------------- */
@@ -462,10 +456,73 @@ footer {
 
 #content {
   padding: $gutter;
-  img {
+
+  > img {
     display: block;
     width: 80%;
     height: auto;
     margin: 1rem auto;
+  }
+
+  .firstThreeRow,
+  .phaseFourRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    > img {
+      display: block;
+      width: 80%;
+      max-width: 360px;
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  .turningPointRow {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .turningPointText {
+      h3,
+      p {
+        margin: 0;
+      }
+
+      p {
+        margin-top: 0.6rem;
+      }
+    }
+
+    > img {
+      display: block;
+      width: 80%;
+      max-width: 360px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+
+  .swiper {
+    width: 90%;
+    height: auto;
+    margin: 1.5rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+
+    --swiper-theme-color: $panel5;
+    --swiper-pagination-color: #99D0C9;
+    --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.5);
+    --swiper-pagination-bullet-inactive-opacity: 2;
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
   }
 }

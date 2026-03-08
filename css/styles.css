@@ -538,7 +538,7 @@ main h1 {
 
 /* --------------------------- SECTION THREE --------------------------- */
 #three {
-  background-color: #71ACB0;
+  background-color: #4B8D9E;
 }
 #three #dev,
 #three #design {
@@ -586,7 +586,7 @@ main h1 {
 
 /* --------------------------- SECTION FOUR --------------------------- */
 #four {
-  background-color: #4B8D9E;
+  background-color: #315A72;
   color: #ECECEC;
   text-align: center;
 }
@@ -617,12 +617,6 @@ main h1 {
 #four #caseStudies div:hover img {
   transform: scale(1.05);
   transition: transform 300ms ease;
-}
-
-/* --------------------------- SECTION FIVE --------------------------- */
-#five {
-  background-color: #315A72;
-  color: #ECECEC;
 }
 
 /* --------------------------- FOOTER --------------------------- */
@@ -719,11 +713,63 @@ footer p.legal {
 #content {
   padding: 10px;
 }
-#content img {
+#content > img {
   display: block;
   width: 80%;
   height: auto;
   margin: 1rem auto;
+}
+#content .firstThreeRow,
+#content .phaseFourRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#content .firstThreeRow > img,
+#content .phaseFourRow > img {
+  display: block;
+  width: 80%;
+  max-width: 360px;
+  height: auto;
+  margin: 0;
+}
+#content .turningPointRow {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#content .turningPointRow .turningPointText h3,
+#content .turningPointRow .turningPointText p {
+  margin: 0;
+}
+#content .turningPointRow .turningPointText p {
+  margin-top: 0.6rem;
+}
+#content .turningPointRow > img {
+  display: block;
+  width: 80%;
+  max-width: 360px;
+  height: auto;
+  margin: 0 auto;
+}
+#content .swiper {
+  width: 90%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+  --swiper-theme-color: $panel5;
+  --swiper-pagination-color: #99D0C9;
+  --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.5);
+  --swiper-pagination-bullet-inactive-opacity: 2;
+}
+#content .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
 }
 
 @media only screen and (min-width: 36rem) {
@@ -803,6 +849,99 @@ footer p.legal {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
+  }
+  /* --------------------------- MEDIA.HTML PAGE --------------------------- */
+  #mediaMain #content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #mediaMain #content > h2,
+  #mediaMain #content > h3,
+  #mediaMain #content > p {
+    flex: 0 0 100%;
+    padding: 0 1rem;
+  }
+  #mediaMain #content > .swiper {
+    flex: 0 1 82%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  #mediaMain #content .firstThreeRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  #mediaMain #content .firstThreeRow > img {
+    flex: 0 1 calc(33.333% - 1rem);
+    max-width: 240px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  #mediaMain #content .turningPointRow {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0 1rem;
+  }
+  #mediaMain #content .turningPointRow .turningPointText {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+  #mediaMain #content .turningPointRow .turningPointText h3,
+  #mediaMain #content .turningPointRow .turningPointText p {
+    margin: 0;
+  }
+  #mediaMain #content .turningPointRow .turningPointText p {
+    margin-top: 0.6rem;
+  }
+  #mediaMain #content .turningPointRow > img {
+    flex: 0 0 280px;
+    max-width: 280px;
+    width: 40%;
+    height: auto;
+    margin: 0;
+    padding: 3rem 1rem 0 0;
+  }
+  #mediaMain #content .phaseFourRow {
+    flex: 0 0 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.9rem;
+    padding: 0 1rem;
+    overflow-x: auto;
+  }
+  #mediaMain #content .phaseFourRow > img {
+    flex: 0 0 170px;
+    width: 170px;
+    height: auto;
+    margin: 0;
+  }
+  #mediaMain #content .phaseFourRow > img:nth-child(1),
+  #mediaMain #content .phaseFourRow > img:nth-child(3),
+  #mediaMain #content .phaseFourRow > img:nth-child(4) {
+    height: 204px;
+    object-fit: cover;
+    object-position: center top;
+  }
+  #mediaMain #content > img {
+    flex: 0 1 calc(33.333% - 1rem);
+    max-width: 240px;
+    width: 100%;
+    height: auto;
+    margin: 0;
   }
 }
 @media only screen and (min-width: 64rem) {

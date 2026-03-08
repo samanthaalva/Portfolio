@@ -104,3 +104,114 @@ footer div {
   grid-template-columns: auto auto;
   align-items: center;
 }
+
+/* --------------------------- MEDIA.HTML PAGE --------------------------- */
+#mediaMain {
+  #content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    > h2,
+    > h3,
+    > p {
+      flex: 0 0 100%;
+      padding: 0 1rem;
+    }
+
+    > .swiper {
+      flex: 0 1 82%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .firstThreeRow {
+      //flex: 0 0 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 0 1rem;
+
+      > img {
+        flex: 0 1 calc(33.333% - 1rem);
+        max-width: 240px;
+        width: 100%;
+        height: auto;
+        margin: 0;
+      }
+    }
+
+    .turningPointRow {
+      flex: 0 0 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      padding: 0 1rem;
+
+      .turningPointText {
+        flex: 1 1 0;
+        min-width: 0;
+
+        h3,
+        p {
+          margin: 0;
+        }
+
+        p {
+          margin-top: 0.6rem;
+        }
+      }
+
+      > img {
+        flex: 0 0 280px;
+        max-width: 280px;
+        width: 40%;
+        height: auto;
+        margin: 0;
+        padding: 3rem 1rem 0 0;
+
+      }
+    }
+
+    .phaseFourRow {
+      flex: 0 0 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 0.9rem;
+      padding: 0 1rem;
+      overflow-x: auto;
+
+      > img {
+        flex: 0 0 170px;
+        width: 170px;
+        height: auto;
+        margin: 0;
+      }
+
+      > img:nth-child(1),
+      > img:nth-child(3),
+      > img:nth-child(4) {
+        height: 204px;
+        object-fit: cover;
+        object-position: center top;
+      }
+    }
+
+    > img {
+      flex: 0 1 calc(33.333% - 1rem);
+      max-width: 240px;
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+  }
+}

@@ -414,3 +414,58 @@ footer {
     text-align: center;
   }
 }
+
+/* --------------------------- MEDIA.HTML PAGE --------------------------- */
+#mediaMain .hero {
+  position: relative;
+  width: 100%;
+  height: clamp(180px, 30vw, 260px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+#mediaMain .hero img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#mediaMain .hero h1,
+#mediaMain .hero h3 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  margin: 0;
+  margin-top: 4rem;
+  
+}
+
+#mediaMain .hero h1 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+}
+
+#mediaMain .hero h3 {
+  margin-top: 0.4rem;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-weight: $normalWeight;
+}
+
+#content {
+  padding: $gutter;
+  img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 1rem auto;
+  }
+}

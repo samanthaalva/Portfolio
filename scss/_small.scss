@@ -546,3 +546,40 @@ footer {
     }
   }
 }
+
+/* --------------------------- Portfolio.HTML PAGE --------------------------- */
+
+#portfolioMainWrapper {
+
+  h2 {
+    margin: 0 1rem;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  //Styling the rows
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 0 8px;
+    //border: 1px solid green;
+  }
+  .column {
+    //border: 1px solid red;
+    padding: 0 8px;
+    margin: 8px 0;
+  }
+  //Create the For Loop
+  @for $i from 1 through 12 {
+  $w: calc($i /12) *100%;
+  .small-#{$i} {flex-basis: $w;}
+  }
+
+  h1, h3 {
+    color: $Dfont;
+    text-align: center;
+  }
+}

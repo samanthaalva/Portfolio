@@ -275,3 +275,13 @@ footer div {
     height: clamp(160px, 22vw, 220px);
 }
 
+/* --------------------------- Portfolio.HTML PAGE --------------------------- */
+
+#portfolioMainWrapper {
+
+  //Create the For Loop
+  @for $i from 1 through 12 {
+  $w: calc($i /12) *100%;
+  .large-#{$i} {flex-basis: $w;}
+  }
+}

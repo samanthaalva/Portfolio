@@ -16,6 +16,18 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
+    <style>
+        #portfolioMainWrapper main {
+            padding-top: calc(4rem + 10px);
+        }
+
+        @media only screen and (min-width: 64rem) {
+            #portfolioMainWrapper main {
+                padding-top: 1rem;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -72,10 +84,136 @@
     </div> <!-- end nav wrapper -->
 
     <div id="mainWrapper">
-        <main>
-            
-        </main>
-    </div><!-- end main wrapper -->
+        <div id="portfolioMainWrapper">
+            <main>
+                <h1>Developing with Copilot</h1>
+                <h3>Learning AI Prompting the hard way</h3>
+                <h2>Project Overview</h2>
+                <div class="row">
+                    <div class="column small-12 medium-7 large-9">
+                        <p>Coding classes were always more difficult than my UX design courses. I mean, it makes sense.
+                            We had one development class per semester, and these were typically online. I had to tackle
+                            foreign concepts without in-person support, and some essential skills weren’t really taught:
+                            debugging, developer lingo, you get the idea.<br>
+
+                            This particular assignment was challenging because I was testing the waters with GitHub's AI
+                            assistant, Copilot. This did speed up my workflow, and it was nice to put that time to other
+                            assignments. However, we were never taught how to vibe code. This led to a plethora of
+                            issues during the making of my Portfolio Assignment, which was one module before the
+                            Capstone. My classes were really picking up, so I made the hasty mistake of using Github
+                            Copilot to directly modify my code without checking the files before committing changes.
+                            <br>
+                            This complicated things due to the navigation scheme I was working with: Each viewport
+                            showed its’ navigation links differently. For mobile, logos are depicted at the top of the
+                            screen. For tablet, words are at the top of the screen. For desktop, words are listed on the
+                            side of the screen. I should also mention that there was only one page. Each navigation link
+                            jumped to a separate section on the page. With unfamiliar territory, limited time, and
+                            inexperience with AI, there was a storm brewing on the horizon - I just didn’t feel the rain
+                            yet.
+                        </p>
+                    </div> <!-- end column -->
+                    <div class="column small-12 medium-5 large-3">
+                        <img src="images/portfolio1.png" width="449" height="900"
+                            alt="screenshot of portfolio assignment" class="portfolioImage">
+                    </div> <!-- end column -->
+                </div><!-- end row -->
+
+                <h2>Working with Cascading Style Sheets</h2>
+                <div class="row">
+                    <div class="column small-12 medium-7 large-9">
+                        <p>To understand the problem, we have to understand the methodology of this course. I was using
+                            HTML, CSS, and a little bit of Javascript. However, we also tackled utilizing SASS, a
+                            software that offers multiple CSS files (known as SCSS partials), and the ability to
+                            compress files into minified CSS for faster runtimes on browsers. Your SCSS partials feed
+                            into these overarching CSS files, which are routinely updated by a SASS compiler. This
+                            software is amazing because large amounts of code can be organized between different files.
+                            However, files should be checked regularly to ensure everything is in order, which is
+                            something I neglected to do.
+                            <br>
+                            UX developers are advised to code mobile viewports first when doing responsive design. This
+                            is because of Cascading Style sheets. Everything created in your _small.scss file (mobile
+                            screen) will carry over to the _medium.scss file (Tablet screen) until changed. This same
+                            idea carries over to your _large.scss file (Desktop screen). You simply code in your small
+                            file, then make necessary changes (font size, image size, etc.) for your medium file. Any
+                            changes made in your small file will carry over to the other two unless changed.
+                            <br>
+                            This mirrors how UX designers tackle layouts for responsive design. It’s easier to add
+                            elements than take elements away, which is why we save desktop designs for last. This allows
+                            for a flexible and free-flowing design process with less headaches. In this way, I feel like
+                            CSS bridges the gap between design and development. It’s a nice consideration, but it can be
+                            detrimental to a novice developer using GitHub Copilot for the first time.
+
+                        </p>
+                    </div> <!-- end column -->
+                    <div class="column small-12 medium-5 large-3">
+                        <img src="images/portfolio23.png" width="521" height="722"
+                            alt="screenshot of portfolio assignment" class="portfolioImage">
+                    </div> <!-- end column -->
+                </div><!-- end row -->
+
+                <h2>Never Trust the Sycophant</h2>
+                <div class="row">
+                    <div class="column small-12 medium-12 large-12">
+                        <p>I remember one of my professors using the word “Sycophant” to describe AI. In other words,
+                            someone who praises another for personal gain. AI won’t always tell you the truth. It simply
+                            wants you happy, so you keep using its service. This is especially important when coding,
+                            because AI may say it did exactly what you want, but you check the code and raise a brow
+                            instead.
+                            <br>
+                            I was almost done with my assignment. My mobile screen and tablet screens were both polished
+                            for submission. I had worked my way up to desktop screens, and usually, you wouldn’t have to
+                            touch the smaller viewports after they were finished. The code within _large.scss would do
+                            nothing to change your small or medium files. I was really tired near the tail-end of this
+                            project, which had taken at least two hours by this point, so I was asking Copilot for a lot
+                            of help. I committed multiple suggestions in a row, all while looking at the Live Sever on
+                            my second monitor. It all looked fine to me, so when I had “finished”, imagine my surprise
+                            when my other viewports were completely messed up.
+                            <br>
+                            After a few minutes of troubleshooting, I realized that GitHub Copilot had been modifying my
+                            smaller viewports behind my back. These modifications took advantage of the Cascading Style
+                            Sheet mechanism, which made my desktop look pristine at the expense of my hard work in the
+                            smaller viewports. Navigation schemes were messed up, content was all over the place, and I
+                            couldn’t simply undo it all. My AI prompts were over the span of a few hours, so asking
+                            Copilot to simply undo everything didn’t work. I also didn’t want to lose my hard work in
+                            the desktop view, so I begrudgingly went on a 3 hour excursion to untangle the knots Copilot
+                            had left me.
+
+
+                        </p>
+                    </div> <!-- end column -->
+                </div><!-- end row -->
+
+                <div class="row">
+                    <div class="column small-4 medium-3 large-2">
+                        <img src="images/portfolio4.png" width="211" height="286" alt="small screen">
+                    </div> <!-- end column -->
+                     <div class="column small-6  medium-3 large-3">
+                        <img src="images/portfolio5.png" width="286" height="386" alt="small screen">
+                    </div> <!-- end column -->
+                     <div class="column small-6 medium-6 large-7">
+                        <img src="images/portfolio6.png" width="500" height="317" alt="small screen">
+                    </div> <!-- end column -->
+                </div><!-- end row -->
+
+                <h2>A Lesson Worth Learning</h2>
+                <div class="row">
+                    <div class="column small-12 medium-8 large-8">
+                        <p>Fixing all of these hidden mistakes cost me a lot of time. I was hoping to align elements and clean things up before submission, but I had spent too much time unraveling the issues Copilot had caused. The final product of this assignment really suffered because my mistake.  
+<br>
+AI is a valuable tool that can speed up your workflow and give you more time for other important tasks. However, there are limits that I simply didn’t know at the time. It’s great for debugging and troubleshooting, but creating elements for your code is a slippery slope. Maybe you didn’t establish the syntax structure, ID names, or CSS elements Copilot is using. You won’t understand your code, which causes a lot of mental strain when you go in and make changes. Additionally, while Copilot knows how to code, it doesn’t understand core coding principles, like the proper use of Cascading Styling Sheets, dry coding, or naming conventions for ID’s and classes that we can recognize. These principles streamline coding processes for humans, which is something AI doesn’t need to do. If prompted incorrectly, it will simply make a product, not a product you can easily edit. 
+<br>
+I should have understood these limitations and checked my SCSS partials routinely during the process. I should have verified every change before committing. Not only that, but I shouldn’t have trusted Copilot more than I trusted myself. Finally, I wish I had saved documentation of my messed up project while it was at its worst. Case studies weren’t on my mind at the time, but showing off those visuals would have effectively communicated the extent of the damage I saw. 
+<br>
+All things considered, I was satisfied with the assignment I turned in. It wasn’t as polished as my original plan, but it looked decent given the circumstances. Instead of a piece to show off, this project was a harsh learning experience - and these lessons will carry into my coding habits for the rest of my life. 
+</p>
+                    </div> <!-- end column -->
+                    <div class="column small-12 medium-4 large-4">
+                        <img src="images/portfolio7.png" width="364" height="951" alt="small screen">
+                    </div> <!-- end column -->
+                </div><!-- end row -->
+            </main>
+        </div><!-- end main wrapper -->
+    </div>
 
     <div id="footerWrapper">
         <footer>

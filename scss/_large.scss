@@ -275,6 +275,17 @@ footer div {
     height: clamp(160px, 22vw, 220px);
 }
 
+/* --------------------------- MEDIA.HTML PAGE --------------------------- */
+
+#mediaMainWrapper {
+
+    //Create the For Loop
+    @for $i from 1 through 12 {
+    $w: calc($i /12) *100%;
+    .large-#{$i} {flex-basis: $w;}
+    }
+}
+
 /* --------------------------- Portfolio.HTML PAGE --------------------------- */
 
 #portfolioMainWrapper {

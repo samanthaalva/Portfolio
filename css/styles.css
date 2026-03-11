@@ -667,12 +667,82 @@ footer p.legal {
 }
 
 /* --------------------------- MEDIA.HTML PAGE --------------------------- */
+#mediaMainWrapper main {
+  padding-top: 0;
+}
 #mediaMainWrapper h2 {
   margin: 0 1rem;
+}
+#mediaMainWrapper .hero {
+  position: relative;
+  min-height: clamp(180px, 30vw, 260px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  padding-top: calc(4rem + 10px);
+}
+#mediaMainWrapper .hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  border-radius: 0;
+  padding-bottom: 20px;
+}
+#mediaMainWrapper .hero h1,
+#mediaMainWrapper .hero h3 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  margin: 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+#mediaMainWrapper .hero h3 {
+  margin-top: 0.4rem;
 }
 #mediaMainWrapper img {
   width: 100%;
   height: auto;
+}
+#mediaMainWrapper .swiper {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  aspect-ratio: 3/4;
+}
+#mediaMainWrapper .swiper .swiper-wrapper,
+#mediaMainWrapper .swiper .swiper-slide {
+  height: 100%;
+}
+#mediaMainWrapper .swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mediaMainWrapper .swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #fff;
+}
+#mediaMainWrapper .img6,
+#mediaMainWrapper .img7,
+#mediaMainWrapper .img8,
+#mediaMainWrapper .img9 {
+  max-height: 20rem;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 #mediaMainWrapper .row {
   display: flex;
@@ -726,6 +796,20 @@ footer p.legal {
   text-align: center;
 }
 
+@media only screen and (min-width: 36rem) {
+  #mediaMainWrapper .row:last-of-type {
+    align-items: flex-start;
+  }
+  #mediaMainWrapper .row:last-of-type > .column:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  #mediaMainWrapper .hero {
+    padding-top: 1rem;
+  }
+}
 /* --------------------------- Portfolio.HTML PAGE --------------------------- */
 #portfolioMainWrapper h2 {
   margin: 0 1rem;

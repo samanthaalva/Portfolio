@@ -296,3 +296,14 @@ footer div {
   .large-#{$i} {flex-basis: $w;}
   }
 }
+
+/* --------------------------- Artist.HTML PAGE --------------------------- */
+
+#artistMainWrapper {
+
+  //Create the For Loop
+  @for $i from 1 through 12 {
+  $w: calc($i /12) *100%;
+  .large-#{$i} {flex-basis: $w;}
+  }
+}

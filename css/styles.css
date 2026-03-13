@@ -870,6 +870,108 @@ footer p.legal {
   text-align: center;
 }
 
+/* --------------------------- Artist.HTML PAGE --------------------------- */
+#artistMainWrapper {
+  position: relative;
+  min-height: 100vh;
+  margin-top: 0;
+  margin-bottom: 0;
+  isolation: isolate;
+}
+#artistMainWrapper .header {
+  background-color: rgba(61, 154, 157, 0.1);
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+#artistMainWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: rgba(211, 211, 211, 0.5);
+  z-index: 0;
+  pointer-events: none;
+}
+#artistMainWrapper > main {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  overflow: auto;
+}
+#artistMainWrapper .header h1 {
+  margin-top: 0;
+  padding-top: 1rem;
+}
+#artistMainWrapper h2 {
+  margin: 0 1rem;
+}
+#artistMainWrapper img {
+  width: 100%;
+  height: auto;
+}
+#artistMainWrapper .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 0 8px;
+}
+#artistMainWrapper .column {
+  padding: 0 8px;
+  margin: 8px 0;
+}
+#artistMainWrapper .small-1 {
+  flex-basis: 8.3333333333%;
+}
+#artistMainWrapper .small-2 {
+  flex-basis: 16.6666666667%;
+}
+#artistMainWrapper .small-3 {
+  flex-basis: 25%;
+}
+#artistMainWrapper .small-4 {
+  flex-basis: 33.3333333333%;
+}
+#artistMainWrapper .small-5 {
+  flex-basis: 41.6666666667%;
+}
+#artistMainWrapper .small-6 {
+  flex-basis: 50%;
+}
+#artistMainWrapper .small-7 {
+  flex-basis: 58.3333333333%;
+}
+#artistMainWrapper .small-8 {
+  flex-basis: 66.6666666667%;
+}
+#artistMainWrapper .small-9 {
+  flex-basis: 75%;
+}
+#artistMainWrapper .small-10 {
+  flex-basis: 83.3333333333%;
+}
+#artistMainWrapper .small-11 {
+  flex-basis: 91.6666666667%;
+}
+#artistMainWrapper .small-12 {
+  flex-basis: 100%;
+}
+#artistMainWrapper h1, #artistMainWrapper h3 {
+  color: #303030;
+  text-align: center;
+}
+#artistMainWrapper .artist1, #artistMainWrapper .artist2, #artistMainWrapper .artist3, #artistMainWrapper .artist4 {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 36rem) {
   /* NAVIGATION STUFF GOES HERE  */
   #navWrapper ul li a svg {
@@ -1183,6 +1285,55 @@ footer p.legal {
   #portfolioMainWrapper .medium-12 {
     flex-basis: 100%;
   }
+  /* --------------------------- Artist.HTML PAGE --------------------------- */
+  #artistMainWrapper .medium-1 {
+    flex-basis: 8.3333333333%;
+  }
+  #artistMainWrapper .medium-2 {
+    flex-basis: 16.6666666667%;
+  }
+  #artistMainWrapper .medium-3 {
+    flex-basis: 25%;
+  }
+  #artistMainWrapper .medium-4 {
+    flex-basis: 33.3333333333%;
+  }
+  #artistMainWrapper .medium-5 {
+    flex-basis: 41.6666666667%;
+  }
+  #artistMainWrapper .medium-6 {
+    flex-basis: 50%;
+  }
+  #artistMainWrapper .medium-7 {
+    flex-basis: 58.3333333333%;
+  }
+  #artistMainWrapper .medium-8 {
+    flex-basis: 66.6666666667%;
+  }
+  #artistMainWrapper .medium-9 {
+    flex-basis: 75%;
+  }
+  #artistMainWrapper .medium-10 {
+    flex-basis: 83.3333333333%;
+  }
+  #artistMainWrapper .medium-11 {
+    flex-basis: 91.6666666667%;
+  }
+  #artistMainWrapper .medium-12 {
+    flex-basis: 100%;
+  }
+  #artistMainWrapper .artist1, #artistMainWrapper .artist2, #artistMainWrapper .artist3 {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  #artistMainWrapper .artist4 {
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+  }
 }
 @media only screen and (min-width: 64rem) {
   /* NAVIGATION STUFF GOES HERE  */
@@ -1482,6 +1633,43 @@ footer p.legal {
     flex-basis: 91.6666666667%;
   }
   #portfolioMainWrapper .large-12 {
+    flex-basis: 100%;
+  }
+  /* --------------------------- Artist.HTML PAGE --------------------------- */
+  #artistMainWrapper .large-1 {
+    flex-basis: 8.3333333333%;
+  }
+  #artistMainWrapper .large-2 {
+    flex-basis: 16.6666666667%;
+  }
+  #artistMainWrapper .large-3 {
+    flex-basis: 25%;
+  }
+  #artistMainWrapper .large-4 {
+    flex-basis: 33.3333333333%;
+  }
+  #artistMainWrapper .large-5 {
+    flex-basis: 41.6666666667%;
+  }
+  #artistMainWrapper .large-6 {
+    flex-basis: 50%;
+  }
+  #artistMainWrapper .large-7 {
+    flex-basis: 58.3333333333%;
+  }
+  #artistMainWrapper .large-8 {
+    flex-basis: 66.6666666667%;
+  }
+  #artistMainWrapper .large-9 {
+    flex-basis: 75%;
+  }
+  #artistMainWrapper .large-10 {
+    flex-basis: 83.3333333333%;
+  }
+  #artistMainWrapper .large-11 {
+    flex-basis: 91.6666666667%;
+  }
+  #artistMainWrapper .large-12 {
     flex-basis: 100%;
   }
 }

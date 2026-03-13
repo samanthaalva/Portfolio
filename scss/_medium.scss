@@ -319,3 +319,27 @@ footer div {
   .medium-#{$i} {flex-basis: $w;}
   }
 }
+
+/* --------------------------- Artist.HTML PAGE --------------------------- */
+
+#artistMainWrapper {
+
+  //Create the For Loop
+  @for $i from 1 through 12 {
+  $w: calc($i /12) *100%;
+  .medium-#{$i} {flex-basis: $w;}
+  }
+
+  .artist1, .artist2, .artist3 {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .artist4 {
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+  }
+}

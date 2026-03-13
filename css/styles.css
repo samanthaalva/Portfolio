@@ -965,11 +965,71 @@ footer p.legal {
   color: #303030;
   text-align: center;
 }
-#artistMainWrapper .artist1, #artistMainWrapper .artist2, #artistMainWrapper .artist3, #artistMainWrapper .artist4 {
-  width: 70%;
+#artistMainWrapper .artist1, #artistMainWrapper .artist2, #artistMainWrapper .artist3 {
+  width: 0%;
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+/* --------------------------- Bookstore.HTML PAGE --------------------------- */
+#bookstoreMainWrapper h2 {
+  margin: 0 1rem;
+}
+#bookstoreMainWrapper img {
+  width: 100%;
+  height: auto;
+}
+#bookstoreMainWrapper .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 0 8px;
+}
+#bookstoreMainWrapper .column {
+  padding: 0 8px;
+  margin: 8px 0;
+}
+#bookstoreMainWrapper .small-1 {
+  flex-basis: 8.3333333333%;
+}
+#bookstoreMainWrapper .small-2 {
+  flex-basis: 16.6666666667%;
+}
+#bookstoreMainWrapper .small-3 {
+  flex-basis: 25%;
+}
+#bookstoreMainWrapper .small-4 {
+  flex-basis: 33.3333333333%;
+}
+#bookstoreMainWrapper .small-5 {
+  flex-basis: 41.6666666667%;
+}
+#bookstoreMainWrapper .small-6 {
+  flex-basis: 50%;
+}
+#bookstoreMainWrapper .small-7 {
+  flex-basis: 58.3333333333%;
+}
+#bookstoreMainWrapper .small-8 {
+  flex-basis: 66.6666666667%;
+}
+#bookstoreMainWrapper .small-9 {
+  flex-basis: 75%;
+}
+#bookstoreMainWrapper .small-10 {
+  flex-basis: 83.3333333333%;
+}
+#bookstoreMainWrapper .small-11 {
+  flex-basis: 91.6666666667%;
+}
+#bookstoreMainWrapper .small-12 {
+  flex-basis: 100%;
+}
+#bookstoreMainWrapper h1, #bookstoreMainWrapper h3 {
+  color: #303030;
+  text-align: center;
 }
 
 @media only screen and (min-width: 36rem) {
@@ -1334,6 +1394,43 @@ footer p.legal {
     height: auto;
     margin: 0 auto;
   }
+  /* --------------------------- Bookstore.HTML PAGE --------------------------- */
+  #bookstoreMainWrapper .medium-1 {
+    flex-basis: 8.3333333333%;
+  }
+  #bookstoreMainWrapper .medium-2 {
+    flex-basis: 16.6666666667%;
+  }
+  #bookstoreMainWrapper .medium-3 {
+    flex-basis: 25%;
+  }
+  #bookstoreMainWrapper .medium-4 {
+    flex-basis: 33.3333333333%;
+  }
+  #bookstoreMainWrapper .medium-5 {
+    flex-basis: 41.6666666667%;
+  }
+  #bookstoreMainWrapper .medium-6 {
+    flex-basis: 50%;
+  }
+  #bookstoreMainWrapper .medium-7 {
+    flex-basis: 58.3333333333%;
+  }
+  #bookstoreMainWrapper .medium-8 {
+    flex-basis: 66.6666666667%;
+  }
+  #bookstoreMainWrapper .medium-9 {
+    flex-basis: 75%;
+  }
+  #bookstoreMainWrapper .medium-10 {
+    flex-basis: 83.3333333333%;
+  }
+  #bookstoreMainWrapper .medium-11 {
+    flex-basis: 91.6666666667%;
+  }
+  #bookstoreMainWrapper .medium-12 {
+    flex-basis: 100%;
+  }
 }
 @media only screen and (min-width: 64rem) {
   /* NAVIGATION STUFF GOES HERE  */
@@ -1670,6 +1767,43 @@ footer p.legal {
     flex-basis: 91.6666666667%;
   }
   #artistMainWrapper .large-12 {
+    flex-basis: 100%;
+  }
+  /* --------------------------- bookstore.HTML PAGE --------------------------- */
+  #bookstoreMainWrapper .large-1 {
+    flex-basis: 8.3333333333%;
+  }
+  #bookstoreMainWrapper .large-2 {
+    flex-basis: 16.6666666667%;
+  }
+  #bookstoreMainWrapper .large-3 {
+    flex-basis: 25%;
+  }
+  #bookstoreMainWrapper .large-4 {
+    flex-basis: 33.3333333333%;
+  }
+  #bookstoreMainWrapper .large-5 {
+    flex-basis: 41.6666666667%;
+  }
+  #bookstoreMainWrapper .large-6 {
+    flex-basis: 50%;
+  }
+  #bookstoreMainWrapper .large-7 {
+    flex-basis: 58.3333333333%;
+  }
+  #bookstoreMainWrapper .large-8 {
+    flex-basis: 66.6666666667%;
+  }
+  #bookstoreMainWrapper .large-9 {
+    flex-basis: 75%;
+  }
+  #bookstoreMainWrapper .large-10 {
+    flex-basis: 83.3333333333%;
+  }
+  #bookstoreMainWrapper .large-11 {
+    flex-basis: 91.6666666667%;
+  }
+  #bookstoreMainWrapper .large-12 {
     flex-basis: 100%;
   }
 }

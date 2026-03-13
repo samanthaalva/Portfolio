@@ -343,3 +343,15 @@ footer div {
     margin: 0 auto;
   }
 }
+
+/* --------------------------- Bookstore.HTML PAGE --------------------------- */
+
+#bookstoreMainWrapper {
+
+  //Create the For Loop
+  @for $i from 1 through 12 {
+  $w: calc($i /12) *100%;
+  .medium-#{$i} {flex-basis: $w;}
+  }
+}
+

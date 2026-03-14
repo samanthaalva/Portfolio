@@ -317,4 +317,11 @@ footer div {
   $w: calc($i /12) *100%;
   .large-#{$i} {flex-basis: $w;}
   }
+
+    .avengers {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
 }

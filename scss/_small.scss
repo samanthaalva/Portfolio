@@ -676,6 +676,9 @@ footer {
   h2 {
     margin: 0 1rem;
   }
+  p {
+    margin: 1rem 1rem;
+  }
   img {
     width: 100%;
     height: auto;
@@ -703,5 +706,32 @@ footer {
   h1, h3 {
     color: $Dfont;
     text-align: center;
+  }
+  h4 {
+    text-align: left; 
+    margin-left: 1rem;
+  }
+  .avengers {
+      
+    height: auto;
+    display: none;
+    margin: 0 auto;
+  }
+  figure {
+    margin: 0;
+    width: auto;
+
+    img {
+      display: block;
+      width: 50%;
+      height: auto;
+      margin: 0 auto;
+    }
+    
+  figcaption {
+    font-style: italic;
+    font-size: .8rem;
+    text-align: center;
+  }
   }
 }

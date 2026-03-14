@@ -976,6 +976,9 @@ footer p.legal {
 #bookstoreMainWrapper h2 {
   margin: 0 1rem;
 }
+#bookstoreMainWrapper p {
+  margin: 1rem 1rem;
+}
 #bookstoreMainWrapper img {
   width: 100%;
   height: auto;
@@ -1029,6 +1032,30 @@ footer p.legal {
 }
 #bookstoreMainWrapper h1, #bookstoreMainWrapper h3 {
   color: #303030;
+  text-align: center;
+}
+#bookstoreMainWrapper h4 {
+  text-align: left;
+  margin-left: 1rem;
+}
+#bookstoreMainWrapper .avengers {
+  height: auto;
+  display: none;
+  margin: 0 auto;
+}
+#bookstoreMainWrapper figure {
+  margin: 0;
+  width: auto;
+}
+#bookstoreMainWrapper figure img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+#bookstoreMainWrapper figure figcaption {
+  font-style: italic;
+  font-size: 0.8rem;
   text-align: center;
 }
 
@@ -1431,6 +1458,27 @@ footer p.legal {
   #bookstoreMainWrapper .medium-12 {
     flex-basis: 100%;
   }
+  #bookstoreMainWrapper .avengers {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  #bookstoreMainWrapper figure {
+    margin: 0;
+    width: auto;
+  }
+  #bookstoreMainWrapper figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  #bookstoreMainWrapper figure figcaption {
+    font-style: italic;
+    font-size: 0.8rem;
+    text-align: left;
+  }
 }
 @media only screen and (min-width: 64rem) {
   /* NAVIGATION STUFF GOES HERE  */
@@ -1805,5 +1853,11 @@ footer p.legal {
   }
   #bookstoreMainWrapper .large-12 {
     flex-basis: 100%;
+  }
+  #bookstoreMainWrapper .avengers {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 }

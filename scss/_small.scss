@@ -732,6 +732,30 @@ footer {
     font-style: italic;
     font-size: .8rem;
     text-align: center;
+    padding-top: .5rem;
   }
   }
+
+.video-figure {
+  margin: 0 auto 2rem;
+  width: calc(100% - 2rem);
+  max-width: 560px;
+}
+
+.video-figure iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 0; // keep caption directly below video
+}
+
+.video-figure figcaption {
+  font-style: italic;
+  font-size: 0.8rem;
+  text-align: center;
+  padding-top: 0.2rem;   // decreased
+  padding-bottom: 1rem;  // increased
+}
 }

@@ -628,6 +628,16 @@ main h1 {
 footer {
   color: white;
   padding: 0.5rem 10px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer > div {
+  width: 100%;
+  justify-content: center;
 }
 footer section.contact p {
   font-size: 1.2rem;
@@ -659,9 +669,8 @@ footer section.location {
   font-size: 1.5rem;
 }
 footer p.legal {
-  padding-top: 2rem;
-  justify-content: center;
-  margin: 0;
+  padding-top: 0;
+  margin: 1rem 0 0;
   font-weight: 300;
   text-align: center;
 }
@@ -1157,6 +1166,7 @@ footer p.legal {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
+    justify-content: center;
   }
   /* --------------------------- MEDIA.HTML PAGE --------------------------- */
   #mediaMain #content {
@@ -1722,6 +1732,7 @@ footer p.legal {
   footer div {
     display: grid;
     grid-template-columns: auto auto auto;
+    justify-content: center;
   }
   /* --------------------------- MEDIA.HTML PAGE --------------------------- */
   #mediaMain .hero {

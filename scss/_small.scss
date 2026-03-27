@@ -361,6 +361,17 @@ main {
 footer {
   color: white;
   padding: 0.5rem $gutter;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    width: 100%;
+    justify-content: center;
+  }
 
   section.contact {
     p {
@@ -401,9 +412,8 @@ footer {
   }
 
   p.legal {
-    padding-top: 2rem;
-    justify-content: center;
-    margin: 0;
+    padding-top: 0;
+    margin: 1rem 0 0;
     font-weight: $lightWeight;
     text-align: center;
   }

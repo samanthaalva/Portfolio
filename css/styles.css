@@ -397,6 +397,8 @@ main h1 {
 #one #profilePic {
   border-radius: 10px;
   filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+  width: 80%;
+  height: auto;
 }
 #one h2 {
   font-weight: 500;
@@ -1105,7 +1107,7 @@ footer p.legal {
   }
   /* --------------------------- SECTION ONE --------------------------- */
   #one #profilePic {
-    width: 90%;
+    width: 50%;
     height: auto;
   }
   #one button {

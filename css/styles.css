@@ -337,12 +337,15 @@ body {
 }
 #navWrapper ul {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
-  margin: 0;
-  padding: 0;
-  min-width: max-content;
+  margin: 0 0 0 4rem;
+  width: calc(100% - 4rem);
+  padding: 0 0.5rem;
+  min-width: 0;
   list-style-type: none;
+  justify-items: center;
+  align-items: center;
 }
 #navWrapper ul li {
   transition: background-color 0.3s ease;
@@ -363,6 +366,28 @@ body {
 }
 #navWrapper ul li a span {
   display: none;
+}
+
+#portfolioLogo {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+  z-index: 200;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#portfolioLogo img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 /* --------------------------- MAIN --------------------------- */
@@ -1552,6 +1577,26 @@ footer p.legal {
     display: block;
     margin-top: 0.5rem;
     font-size: 1.5rem;
+  }
+  #portfolioLogo {
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    width: 250px;
+    height: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+    pointer-events: none;
+    overflow: visible;
+  }
+  #portfolioLogo img {
+    position: relative;
+    width: 120px;
+    max-width: none;
+    height: auto;
   }
   /* BODY STUFF GOES HERE  */
   body {

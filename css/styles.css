@@ -1119,6 +1119,9 @@ footer p.legal {
 
 @media only screen and (min-width: 36rem) {
   /* NAVIGATION STUFF GOES HERE  */
+  #navWrapper ul {
+    padding: 0.5rem 0;
+  }
   #navWrapper ul li a svg {
     display: none;
   }
@@ -1127,10 +1130,26 @@ footer p.legal {
     color: #ECECEC;
     font-size: 1.1rem;
   }
+}
+@media only screen and (min-width: 36rem) and (max-width: 63.9375rem) {
+  #portfolioLogo {
+    left: 0.75rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    padding: 0.3rem;
+  }
+  #portfolioLogo img {
+    width: 100%;
+    max-height: 100%;
+  }
+}
+@media only screen and (min-width: 36rem) {
   section {
     padding: 0;
     margin: 0;
   }
+}
+@media only screen and (min-width: 36rem) {
   /* --------------------------- SECTION ONE --------------------------- */
   #one #profilePic {
     width: 50%;

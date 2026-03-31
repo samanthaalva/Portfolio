@@ -2,8 +2,10 @@
 const theTime = new Date();
 document.querySelector("#year").textContent = theTime.getFullYear();
 
-// get me a list of all the items to watch
-const myListOfItems = document.querySelectorAll("section");
+// Only watch top-level main sections that map to a nav link.
+const myListOfItems = Array.from(document.querySelectorAll("main > section[id]")).filter(
+  (section) => document.querySelector(`#navWrapper a[href="#${section.id}"]`)
+);
 
 // a comma deliniated list of name/value pairs controlling how the observer works
 let observerOptions = {
@@ -26,19 +28,19 @@ const myObserver = new IntersectionObserver((allItems) => {
 
 // function to hilight the current navigation items
 function hiliteNav(x) {
+  const theid = x.getAttribute("id");
+  const newActiveLink = document.querySelector(`[href="#${theid}"]`);
+
+  // Ignore sections that do not map to a nav link.
+  if (!newActiveLink || !newActiveLink.parentElement) return;
+
   // Remove active class from currently active item (if it exists)
   const currentActive = document.querySelector(".active");
   if (currentActive) {
     currentActive.classList.remove("active");
   }
 
-  let theid = x.getAttribute("id");
-  let newActiveLink = document.querySelector(`[href="#${theid}"]`);
-
-  // Make sure the link exists before trying to add the active class
-  if (newActiveLink && newActiveLink.parentElement) {
-    newActiveLink.parentElement.classList.add("active");
-  }
+  newActiveLink.parentElement.classList.add("active");
 }
 
 // Add smooth scrolling with offset for navigation links

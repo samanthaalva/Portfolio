@@ -1578,6 +1578,9 @@ footer p.legal {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
     height: 100vh;
     margin: 0;
     padding: 2rem 1rem;

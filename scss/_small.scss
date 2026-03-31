@@ -98,6 +98,7 @@ main {
   color: $Dfont;
   display: flex;
   flex-direction: column;
+  
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -111,6 +112,7 @@ main {
     border-radius: 10px;
     filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
     width: 80%;
+    max-width: 300px;
     height: auto;
   }
 

@@ -398,6 +398,7 @@ main h1 {
   border-radius: 10px;
   filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
   width: 80%;
+  max-width: 300px;
   height: auto;
 }
 #one h2 {
@@ -1108,6 +1109,7 @@ footer p.legal {
   /* --------------------------- SECTION ONE --------------------------- */
   #one #profilePic {
     width: 50%;
+    max-width: none;
     height: auto;
   }
   #one button {
@@ -1591,6 +1593,7 @@ footer p.legal {
     height: auto;
   }
   #one #profilePic {
+    max-width: none;
     width: 65%;
     height: auto;
   }

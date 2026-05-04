@@ -590,6 +590,7 @@ main h1 {
   border-radius: 10px;
   padding: 0;
   border: 3px solid white;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
 }
 #three #dev #designBorder img,
 #three #dev #devBorder img,
@@ -600,7 +601,6 @@ main h1 {
   height: auto;
   margin: 0 auto;
   border-radius: 10px 10px 0 0;
-  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
 }
 #three #dev #designBorder ul li,
 #three #dev #devBorder ul li,
@@ -1766,7 +1766,6 @@ footer p.legal {
     height: auto;
     margin: 0 auto;
     border-radius: 10px 10px 0 0;
-    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
   }
   #three #dev #designBorder ul li, #three #dev #devBorder ul li, #three #design #designBorder ul li, #three #design #devBorder ul li {
     color: white;

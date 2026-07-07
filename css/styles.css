@@ -706,9 +706,14 @@ footer p.legal {
 /* --------------------------- MEDIA.HTML PAGE --------------------------- */
 #mediaMainWrapper main {
   padding-top: 0;
+  font-family: "Kufam", serif;
 }
 #mediaMainWrapper h2 {
   margin: 0 1rem;
+  font-weight: 200;
+}
+#mediaMainWrapper p {
+  line-height: 1.6;
 }
 #mediaMainWrapper .hero {
   position: relative;
@@ -740,6 +745,7 @@ footer p.legal {
   color: white;
   margin: 0;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  font-weight: 100;
 }
 #mediaMainWrapper .hero h3 {
   margin-top: 0.4rem;
@@ -1117,6 +1123,128 @@ footer p.legal {
   padding-bottom: 1rem;
 }
 
+/* --------------------------- Utah.HTML PAGE --------------------------- */
+#utahMainWrapper main {
+  padding-top: 0;
+  font-family: "Montserrat", sans-serif;
+}
+#utahMainWrapper main h1 {
+  font-weight: 300;
+}
+#utahMainWrapper main h2 {
+  margin: 0 1rem;
+  font-weight: 400;
+}
+#utahMainWrapper main h3 {
+  font-weight: 200;
+}
+#utahMainWrapper main p {
+  line-height: 1.4;
+}
+#utahMainWrapper .hero {
+  position: relative;
+  min-height: clamp(180px, 30vw, 260px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  padding-top: calc(4rem + 10px);
+}
+#utahMainWrapper .hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  border-radius: 0;
+  padding-bottom: 20px;
+}
+#utahMainWrapper .hero h1,
+#utahMainWrapper .hero h3 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  margin: 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+#utahMainWrapper .hero h3 {
+  margin-top: 0.4rem;
+}
+#utahMainWrapper img {
+  width: 100%;
+  height: auto;
+}
+#utahMainWrapper .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 0 8px;
+}
+#utahMainWrapper .column {
+  padding: 0 8px;
+  margin: 8px 0;
+}
+#utahMainWrapper .small-1 {
+  flex-basis: 8.3333333333%;
+}
+#utahMainWrapper .small-2 {
+  flex-basis: 16.6666666667%;
+}
+#utahMainWrapper .small-3 {
+  flex-basis: 25%;
+}
+#utahMainWrapper .small-4 {
+  flex-basis: 33.3333333333%;
+}
+#utahMainWrapper .small-5 {
+  flex-basis: 41.6666666667%;
+}
+#utahMainWrapper .small-6 {
+  flex-basis: 50%;
+}
+#utahMainWrapper .small-7 {
+  flex-basis: 58.3333333333%;
+}
+#utahMainWrapper .small-8 {
+  flex-basis: 66.6666666667%;
+}
+#utahMainWrapper .small-9 {
+  flex-basis: 75%;
+}
+#utahMainWrapper .small-10 {
+  flex-basis: 83.3333333333%;
+}
+#utahMainWrapper .small-11 {
+  flex-basis: 91.6666666667%;
+}
+#utahMainWrapper .small-12 {
+  flex-basis: 100%;
+}
+#utahMainWrapper h1, #utahMainWrapper h3 {
+  color: #303030;
+  text-align: center;
+}
+
+@media only screen and (min-width: 36rem) {
+  #mediaMainWrapper .row:last-of-type {
+    align-items: flex-start;
+  }
+  #mediaMainWrapper .row:last-of-type > .column:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  #mediaMainWrapper .hero {
+    padding-top: 1rem;
+  }
+}
 @media only screen and (min-width: 36rem) {
   /* NAVIGATION STUFF GOES HERE  */
   #navWrapper ul {
@@ -1558,6 +1686,43 @@ footer p.legal {
     font-size: 0.8rem;
     text-align: left;
   }
+  /* --------------------------- utah.HTML PAGE --------------------------- */
+  #utahMainWrapper .medium-1 {
+    flex-basis: 8.3333333333%;
+  }
+  #utahMainWrapper .medium-2 {
+    flex-basis: 16.6666666667%;
+  }
+  #utahMainWrapper .medium-3 {
+    flex-basis: 25%;
+  }
+  #utahMainWrapper .medium-4 {
+    flex-basis: 33.3333333333%;
+  }
+  #utahMainWrapper .medium-5 {
+    flex-basis: 41.6666666667%;
+  }
+  #utahMainWrapper .medium-6 {
+    flex-basis: 50%;
+  }
+  #utahMainWrapper .medium-7 {
+    flex-basis: 58.3333333333%;
+  }
+  #utahMainWrapper .medium-8 {
+    flex-basis: 66.6666666667%;
+  }
+  #utahMainWrapper .medium-9 {
+    flex-basis: 75%;
+  }
+  #utahMainWrapper .medium-10 {
+    flex-basis: 83.3333333333%;
+  }
+  #utahMainWrapper .medium-11 {
+    flex-basis: 91.6666666667%;
+  }
+  #utahMainWrapper .medium-12 {
+    flex-basis: 100%;
+  }
 }
 @media only screen and (min-width: 64rem) {
   /* NAVIGATION STUFF GOES HERE  */
@@ -1809,154 +1974,44 @@ footer p.legal {
   #mediaMain .hero {
     height: clamp(160px, 22vw, 220px);
   }
-  /* --------------------------- MEDIA.HTML PAGE --------------------------- */
-  #mediaMainWrapper .large-1 {
+  /* --------------------------- For Loop for Case study pages --------------------------- */
+  #mediaMainWrapper .large-1, #portfolioMainWrapper .large-1, #artistMainWrapper .large-1, #utahMainWrapper .large-1 {
     flex-basis: 8.3333333333%;
   }
-  #mediaMainWrapper .large-2 {
+  #mediaMainWrapper .large-2, #portfolioMainWrapper .large-2, #artistMainWrapper .large-2, #utahMainWrapper .large-2 {
     flex-basis: 16.6666666667%;
   }
-  #mediaMainWrapper .large-3 {
+  #mediaMainWrapper .large-3, #portfolioMainWrapper .large-3, #artistMainWrapper .large-3, #utahMainWrapper .large-3 {
     flex-basis: 25%;
   }
-  #mediaMainWrapper .large-4 {
+  #mediaMainWrapper .large-4, #portfolioMainWrapper .large-4, #artistMainWrapper .large-4, #utahMainWrapper .large-4 {
     flex-basis: 33.3333333333%;
   }
-  #mediaMainWrapper .large-5 {
+  #mediaMainWrapper .large-5, #portfolioMainWrapper .large-5, #artistMainWrapper .large-5, #utahMainWrapper .large-5 {
     flex-basis: 41.6666666667%;
   }
-  #mediaMainWrapper .large-6 {
+  #mediaMainWrapper .large-6, #portfolioMainWrapper .large-6, #artistMainWrapper .large-6, #utahMainWrapper .large-6 {
     flex-basis: 50%;
   }
-  #mediaMainWrapper .large-7 {
+  #mediaMainWrapper .large-7, #portfolioMainWrapper .large-7, #artistMainWrapper .large-7, #utahMainWrapper .large-7 {
     flex-basis: 58.3333333333%;
   }
-  #mediaMainWrapper .large-8 {
+  #mediaMainWrapper .large-8, #portfolioMainWrapper .large-8, #artistMainWrapper .large-8, #utahMainWrapper .large-8 {
     flex-basis: 66.6666666667%;
   }
-  #mediaMainWrapper .large-9 {
+  #mediaMainWrapper .large-9, #portfolioMainWrapper .large-9, #artistMainWrapper .large-9, #utahMainWrapper .large-9 {
     flex-basis: 75%;
   }
-  #mediaMainWrapper .large-10 {
+  #mediaMainWrapper .large-10, #portfolioMainWrapper .large-10, #artistMainWrapper .large-10, #utahMainWrapper .large-10 {
     flex-basis: 83.3333333333%;
   }
-  #mediaMainWrapper .large-11 {
+  #mediaMainWrapper .large-11, #portfolioMainWrapper .large-11, #artistMainWrapper .large-11, #utahMainWrapper .large-11 {
     flex-basis: 91.6666666667%;
   }
-  #mediaMainWrapper .large-12 {
-    flex-basis: 100%;
-  }
-  /* --------------------------- Portfolio.HTML PAGE --------------------------- */
-  #portfolioMainWrapper .large-1 {
-    flex-basis: 8.3333333333%;
-  }
-  #portfolioMainWrapper .large-2 {
-    flex-basis: 16.6666666667%;
-  }
-  #portfolioMainWrapper .large-3 {
-    flex-basis: 25%;
-  }
-  #portfolioMainWrapper .large-4 {
-    flex-basis: 33.3333333333%;
-  }
-  #portfolioMainWrapper .large-5 {
-    flex-basis: 41.6666666667%;
-  }
-  #portfolioMainWrapper .large-6 {
-    flex-basis: 50%;
-  }
-  #portfolioMainWrapper .large-7 {
-    flex-basis: 58.3333333333%;
-  }
-  #portfolioMainWrapper .large-8 {
-    flex-basis: 66.6666666667%;
-  }
-  #portfolioMainWrapper .large-9 {
-    flex-basis: 75%;
-  }
-  #portfolioMainWrapper .large-10 {
-    flex-basis: 83.3333333333%;
-  }
-  #portfolioMainWrapper .large-11 {
-    flex-basis: 91.6666666667%;
-  }
-  #portfolioMainWrapper .large-12 {
-    flex-basis: 100%;
-  }
-  /* --------------------------- Artist.HTML PAGE --------------------------- */
-  #artistMainWrapper .large-1 {
-    flex-basis: 8.3333333333%;
-  }
-  #artistMainWrapper .large-2 {
-    flex-basis: 16.6666666667%;
-  }
-  #artistMainWrapper .large-3 {
-    flex-basis: 25%;
-  }
-  #artistMainWrapper .large-4 {
-    flex-basis: 33.3333333333%;
-  }
-  #artistMainWrapper .large-5 {
-    flex-basis: 41.6666666667%;
-  }
-  #artistMainWrapper .large-6 {
-    flex-basis: 50%;
-  }
-  #artistMainWrapper .large-7 {
-    flex-basis: 58.3333333333%;
-  }
-  #artistMainWrapper .large-8 {
-    flex-basis: 66.6666666667%;
-  }
-  #artistMainWrapper .large-9 {
-    flex-basis: 75%;
-  }
-  #artistMainWrapper .large-10 {
-    flex-basis: 83.3333333333%;
-  }
-  #artistMainWrapper .large-11 {
-    flex-basis: 91.6666666667%;
-  }
-  #artistMainWrapper .large-12 {
+  #mediaMainWrapper .large-12, #portfolioMainWrapper .large-12, #artistMainWrapper .large-12, #utahMainWrapper .large-12 {
     flex-basis: 100%;
   }
   /* --------------------------- bookstore.HTML PAGE --------------------------- */
-  #bookstoreMainWrapper .large-1 {
-    flex-basis: 8.3333333333%;
-  }
-  #bookstoreMainWrapper .large-2 {
-    flex-basis: 16.6666666667%;
-  }
-  #bookstoreMainWrapper .large-3 {
-    flex-basis: 25%;
-  }
-  #bookstoreMainWrapper .large-4 {
-    flex-basis: 33.3333333333%;
-  }
-  #bookstoreMainWrapper .large-5 {
-    flex-basis: 41.6666666667%;
-  }
-  #bookstoreMainWrapper .large-6 {
-    flex-basis: 50%;
-  }
-  #bookstoreMainWrapper .large-7 {
-    flex-basis: 58.3333333333%;
-  }
-  #bookstoreMainWrapper .large-8 {
-    flex-basis: 66.6666666667%;
-  }
-  #bookstoreMainWrapper .large-9 {
-    flex-basis: 75%;
-  }
-  #bookstoreMainWrapper .large-10 {
-    flex-basis: 83.3333333333%;
-  }
-  #bookstoreMainWrapper .large-11 {
-    flex-basis: 91.6666666667%;
-  }
-  #bookstoreMainWrapper .large-12 {
-    flex-basis: 100%;
-  }
   #bookstoreMainWrapper .avengers {
     width: 50%;
     height: auto;

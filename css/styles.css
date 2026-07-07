@@ -1141,6 +1141,11 @@ footer p.legal {
 #utahMainWrapper main p {
   line-height: 1.4;
 }
+#utahMainWrapper main section.utahDesign1, #utahMainWrapper main section.utahDesign2 {
+  min-height: 0;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
 #utahMainWrapper .hero {
   position: relative;
   min-height: clamp(180px, 30vw, 260px);

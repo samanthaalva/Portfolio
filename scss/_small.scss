@@ -89,6 +89,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   img {
     position: relative;
@@ -124,7 +125,7 @@ main {
   color: $Dfont;
   display: flex;
   flex-direction: column;
-  
+
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -332,7 +333,7 @@ main {
         height: auto;
         margin: 0 auto;
         border-radius: 10px 10px 0 0;
-        
+
       }
 
       ul li {
@@ -358,12 +359,14 @@ main {
     div {
       margin: 10px;
       padding: 0;
+
       img {
         border-radius: 10px;
         filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
         width: 90%;
         height: auto;
       }
+
       h2 {
         margin: 2rem 0 0;
         line-height: 30px;
@@ -375,6 +378,7 @@ main {
     div:hover {
       border: 3px solid white;
       border-radius: 10px;
+
       img {
         transform: scale(1.05);
         transition: transform 300ms ease;
@@ -399,7 +403,7 @@ footer {
   align-items: center;
   justify-content: center;
 
-  > div {
+  >div {
     width: 100%;
     justify-content: center;
   }
@@ -558,18 +562,24 @@ footer {
     padding: 0 8px;
     //border: 1px solid green;
   }
+
   .column {
     //border: 1px solid red;
     padding: 0 8px;
     margin: 8px 0;
   }
+
   //Create the For Loop
   @for $i from 1 through 12 {
-  $w: calc($i /12) *100%;
-  .small-#{$i} {flex-basis: $w;}
+    $w: calc($i /12) *100%;
+
+    .small-#{$i} {
+      flex-basis: $w;
+    }
   }
 
-  h1, h3 {
+  h1,
+  h3 {
     color: $Dfont;
     text-align: center;
   }
@@ -581,7 +591,7 @@ footer {
       align-items: flex-start;
     }
 
-    .row:last-of-type > .column:nth-child(2) {
+    .row:last-of-type>.column:nth-child(2) {
       display: flex;
       justify-content: center;
     }
@@ -604,10 +614,12 @@ footer {
   h2 {
     margin: 0 1rem;
   }
+
   img {
     width: 100%;
     height: auto;
   }
+
   //Styling the rows
   .row {
     display: flex;
@@ -617,18 +629,24 @@ footer {
     padding: 0 8px;
     //border: 1px solid green;
   }
+
   .column {
     //border: 1px solid red;
     padding: 0 8px;
     margin: 8px 0;
   }
+
   //Create the For Loop
   @for $i from 1 through 12 {
-  $w: calc($i /12) *100%;
-  .small-#{$i} {flex-basis: $w;}
+    $w: calc($i /12) *100%;
+
+    .small-#{$i} {
+      flex-basis: $w;
+    }
   }
 
-  h1, h3 {
+  h1,
+  h3 {
     color: $Dfont;
     text-align: center;
   }
@@ -642,6 +660,7 @@ footer {
   margin-top: 0;
   margin-bottom: 0;
   isolation: isolate;
+
   .header {
     background-color: rgba(61, 154, 157, 0.1);
     padding: $gutter 0;
@@ -660,7 +679,7 @@ footer {
     pointer-events: none;
   }
 
-  > main {
+  >main {
     position: relative;
     z-index: 1;
     min-height: 100vh;
@@ -678,10 +697,12 @@ footer {
   h2 {
     margin: 0 1rem;
   }
+
   img {
     width: 100%;
     height: auto;
   }
+
   //Styling the rows
   .row {
     display: flex;
@@ -691,25 +712,33 @@ footer {
     padding: 0 8px;
     //border: 1px solid green;
   }
+
   .column {
     //border: 1px solid red;
     padding: 0 8px;
     margin: 8px 0;
   }
+
   //Create the For Loop
   @for $i from 1 through 12 {
-  $w: calc($i /12) *100%;
-  .small-#{$i} {flex-basis: $w;}
+    $w: calc($i /12) *100%;
+
+    .small-#{$i} {
+      flex-basis: $w;
+    }
   }
 
-  h1, h3 {
+  h1,
+  h3 {
     color: $Dfont;
     text-align: center;
   }
 
   //Images 
 
-  .artist1, .artist2, .artist3{
+  .artist1,
+  .artist2,
+  .artist3 {
     width: 0%;
     height: auto;
     display: block;
@@ -724,13 +753,16 @@ footer {
   h2 {
     margin: 0 1rem;
   }
+
   p {
     margin: 1rem 1rem;
   }
+
   img {
     width: 100%;
     height: auto;
   }
+
   //Styling the rows
   .row {
     display: flex;
@@ -740,31 +772,40 @@ footer {
     padding: 0 8px;
     //border: 1px solid green;
   }
+
   .column {
     //border: 1px solid red;
     padding: 0 8px;
     margin: 8px 0;
   }
+
   //Create the For Loop
   @for $i from 1 through 12 {
-  $w: calc($i /12) *100%;
-  .small-#{$i} {flex-basis: $w;}
+    $w: calc($i /12) *100%;
+
+    .small-#{$i} {
+      flex-basis: $w;
+    }
   }
 
-  h1, h3 {
+  h1,
+  h3 {
     color: $Dfont;
     text-align: center;
   }
+
   h4 {
-    text-align: left; 
+    text-align: left;
     margin-left: 1rem;
   }
+
   .avengers {
-      
+
     height: auto;
     display: none;
     margin: 0 auto;
   }
+
   figure {
     margin: 0;
     width: auto;
@@ -775,37 +816,37 @@ footer {
       height: auto;
       margin: 0 auto;
     }
-    
-  figcaption {
+
+    figcaption {
+      font-style: italic;
+      font-size: .8rem;
+      text-align: center;
+      padding-top: .5rem;
+    }
+  }
+
+  .video-figure {
+    margin: 0 auto 2rem;
+    width: calc(100% - 2rem);
+    max-width: 560px;
+  }
+
+  .video-figure iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 0; // keep caption directly below video
+  }
+
+  .video-figure figcaption {
     font-style: italic;
-    font-size: .8rem;
+    font-size: 0.8rem;
     text-align: center;
-    padding-top: .5rem;
+    padding-top: 0.2rem; // decreased
+    padding-bottom: 1rem; // increased
   }
-  }
-
-.video-figure {
-  margin: 0 auto 2rem;
-  width: calc(100% - 2rem);
-  max-width: 560px;
-}
-
-.video-figure iframe {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  margin: 0 auto;
-  padding-bottom: 0; // keep caption directly below video
-}
-
-.video-figure figcaption {
-  font-style: italic;
-  font-size: 0.8rem;
-  text-align: center;
-  padding-top: 0.2rem;   // decreased
-  padding-bottom: 1rem;  // increased
-}
 }
 
 /* --------------------------- Utah.HTML PAGE --------------------------- */
@@ -814,16 +855,26 @@ footer {
   main {
     padding-top: 0;
     font-family: $utahFont;
-    h1 {font-weight: 300;}
+
+    h1 {
+      font-weight: 300;
+    }
+
     h2 {
       margin: 0 1rem;
       font-weight: 400;
     }
-    h3 {font-weight: 200;}
+
+    h3 {
+      font-weight: 200;
+    }
+
     p {
       line-height: 1.4;
     }
-    section.utahDesign1, section.utahDesign2 {
+
+    section.utahDesign1,
+    section.utahDesign2 {
       min-height: 0;
       margin: 0;
       padding: $gutter 0 0 0;
@@ -883,18 +934,24 @@ footer {
     padding: 0 8px;
     //border: 1px solid green;
   }
+
   .column {
     //border: 1px solid red;
     padding: 0 8px;
     margin: 8px 0;
   }
+
   //Create the For Loop
   @for $i from 1 through 12 {
-  $w: calc($i /12) *100%;
-  .small-#{$i} {flex-basis: $w;}
+    $w: calc($i /12) *100%;
+
+    .small-#{$i} {
+      flex-basis: $w;
+    }
   }
 
-  h1, h3 {
+  h1,
+  h3 {
     color: $Dfont;
     text-align: center;
   }
@@ -906,7 +963,7 @@ footer {
       align-items: flex-start;
     }
 
-    .row:last-of-type > .column:nth-child(2) {
+    .row:last-of-type>.column:nth-child(2) {
       display: flex;
       justify-content: center;
     }

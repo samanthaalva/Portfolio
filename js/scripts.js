@@ -2,9 +2,28 @@
 const theTime = new Date();
 document.querySelector("#year").textContent = theTime.getFullYear();
 
+// logo acts as a home button, returning users to the top of index.html
+const portfolioLogo = document.querySelector("#portfolioLogo");
+if (portfolioLogo) {
+  const onIndexPage =
+    location.pathname === "" ||
+    location.pathname.endsWith("/") ||
+    location.pathname.endsWith("/index.html");
+
+  portfolioLogo.addEventListener("click", () => {
+    if (onIndexPage) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.location.href = "index.html";
+    }
+  });
+}
+
 // Only watch top-level main sections that map to a nav link.
-const myListOfItems = Array.from(document.querySelectorAll("main > section[id]")).filter(
-  (section) => document.querySelector(`#navWrapper a[href="#${section.id}"]`)
+const myListOfItems = Array.from(
+  document.querySelectorAll("main > section[id]"),
+).filter((section) =>
+  document.querySelector(`#navWrapper a[href="#${section.id}"]`),
 );
 
 // a comma deliniated list of name/value pairs controlling how the observer works

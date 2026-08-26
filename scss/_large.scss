@@ -57,7 +57,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1100;
-    pointer-events: none;
+    cursor: pointer;
     overflow: visible;
 
     img {
@@ -127,24 +127,24 @@ main {
 
 // CAROUSEL
 .experienceCarosel {
-  margin: 0 auto;
-  width: 100%;
+    margin: 0 auto;
+    width: 100%;
 
-  img {
-    width: 80px;
-    height: auto;
-  }
-
-  .group {
-    .card {
-      flex: 0 0 5em;
-      height: 7rem;
-            padding: 0.5rem;
-      text-align: center;
-      align-content: center;
-      padding-right: 1rem;
+    img {
+        width: 80px;
+        height: auto;
     }
-  }
+
+    .group {
+        .card {
+            flex: 0 0 5em;
+            height: 7rem;
+            padding: 0.5rem;
+            text-align: center;
+            align-content: center;
+            padding-right: 1rem;
+        }
+    }
 }
 
 /* --------------------------- SECTION TWO --------------------------- */
@@ -195,62 +195,66 @@ main {
         margin: 0;
         padding-top: 0;
 
-     }
     }
+}
+
 /* --------------------------- SECTION THREE --------------------------- */
 #three {
-        min-height: auto;
-        padding: 0.5rem 0.75rem 1rem;
+    min-height: auto;
+    padding: 0.5rem 0.75rem 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-        gap: 1rem;
+    gap: 1rem;
 
-  h1 {
+    h1 {
         flex: 0 0 100%;
-    color: white;
-    text-align: center;
-    font-weight: $normalWeight;
+        color: white;
+        text-align: center;
+        font-weight: $normalWeight;
         margin-top: 0.5rem;
         margin-bottom: 0.75rem;
         padding: 3rem 0 0 0;
-  }
+    }
 
-  #dev, #design {
-    display: flex;
+    #dev,
+    #design {
+        display: flex;
         flex: 1 1 420px;
         max-width: 45%;
         flex-direction: column;
 
-    h2 {
-      font-weight: $normalWeight;
-      margin-bottom: 1rem;
-      color: white;
-    }
+        h2 {
+            font-weight: $normalWeight;
+            margin-bottom: 1rem;
+            color: white;
+        }
 
-    #designBorder, #devBorder {
-      width: 90%;
-      max-width: none;
-      border-radius: 10px;
-      padding: 0;
-      border: 3px solid white;
+        #designBorder,
+        #devBorder {
+            width: 90%;
+            max-width: none;
+            border-radius: 10px;
+            padding: 0;
+            border: 3px solid white;
 
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-        border-radius: 10px 10px 0 0;
-      }
-      ul li {
-        color: white;
-        font-size: 1.4rem;
-        padding: 0.5rem 0;
-        font-family: $sansFont;
-      }
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                border-radius: 10px 10px 0 0;
+            }
+
+            ul li {
+                color: white;
+                font-size: 1.4rem;
+                padding: 0.5rem 0;
+                font-family: $sansFont;
+            }
+        }
     }
-  }
 }
 
 /* --------------------------- SECTION FOUR --------------------------- */
@@ -303,12 +307,18 @@ footer div {
 
 /* --------------------------- For Loop for Case study pages --------------------------- */
 
-#mediaMainWrapper, #portfolioMainWrapper, #artistMainWrapper, #utahMainWrapper {
+#mediaMainWrapper,
+#portfolioMainWrapper,
+#artistMainWrapper,
+#utahMainWrapper {
 
     //Create the For Loop
     @for $i from 1 through 12 {
-    $w: calc($i /12) *100%;
-    .large-#{$i} {flex-basis: $w;}
+        $w: calc($i /12) *100%;
+
+        .large-#{$i} {
+            flex-basis: $w;
+        }
     }
 }
 
@@ -316,11 +326,10 @@ footer div {
 /* --------------------------- bookstore.HTML PAGE --------------------------- */
 
 #bookstoreMainWrapper {
-   .avengers {
-    width: 50%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
+    .avengers {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
 }
-

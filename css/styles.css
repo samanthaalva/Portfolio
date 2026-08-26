@@ -380,6 +380,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 #portfolioLogo img {
   position: relative;
@@ -834,7 +835,8 @@ footer p.legal {
 #mediaMainWrapper .small-12 {
   flex-basis: 100%;
 }
-#mediaMainWrapper h1, #mediaMainWrapper h3 {
+#mediaMainWrapper h1,
+#mediaMainWrapper h3 {
   color: #303030;
   text-align: center;
 }
@@ -908,7 +910,8 @@ footer p.legal {
 #portfolioMainWrapper .small-12 {
   flex-basis: 100%;
 }
-#portfolioMainWrapper h1, #portfolioMainWrapper h3 {
+#portfolioMainWrapper h1,
+#portfolioMainWrapper h3 {
   color: #303030;
   text-align: center;
 }
@@ -1004,11 +1007,14 @@ footer p.legal {
 #artistMainWrapper .small-12 {
   flex-basis: 100%;
 }
-#artistMainWrapper h1, #artistMainWrapper h3 {
+#artistMainWrapper h1,
+#artistMainWrapper h3 {
   color: #303030;
   text-align: center;
 }
-#artistMainWrapper .artist1, #artistMainWrapper .artist2, #artistMainWrapper .artist3 {
+#artistMainWrapper .artist1,
+#artistMainWrapper .artist2,
+#artistMainWrapper .artist3 {
   width: 0%;
   height: auto;
   display: block;
@@ -1073,7 +1079,8 @@ footer p.legal {
 #bookstoreMainWrapper .small-12 {
   flex-basis: 100%;
 }
-#bookstoreMainWrapper h1, #bookstoreMainWrapper h3 {
+#bookstoreMainWrapper h1,
+#bookstoreMainWrapper h3 {
   color: #303030;
   text-align: center;
 }
@@ -1141,7 +1148,8 @@ footer p.legal {
 #utahMainWrapper main p {
   line-height: 1.4;
 }
-#utahMainWrapper main section.utahDesign1, #utahMainWrapper main section.utahDesign2 {
+#utahMainWrapper main section.utahDesign1,
+#utahMainWrapper main section.utahDesign2 {
   min-height: 0;
   margin: 0;
   padding: 10px 0 0 0;
@@ -1231,7 +1239,8 @@ footer p.legal {
 #utahMainWrapper .small-12 {
   flex-basis: 100%;
 }
-#utahMainWrapper h1, #utahMainWrapper h3 {
+#utahMainWrapper h1,
+#utahMainWrapper h3 {
   color: #303030;
   text-align: center;
 }
@@ -1270,6 +1279,7 @@ footer p.legal {
     width: 3.6rem;
     height: 3.6rem;
     padding: 0.3rem;
+    cursor: pointer;
   }
   #portfolioLogo img {
     width: 100%;
@@ -1621,7 +1631,9 @@ footer p.legal {
   #artistMainWrapper .medium-12 {
     flex-basis: 100%;
   }
-  #artistMainWrapper .artist1, #artistMainWrapper .artist2, #artistMainWrapper .artist3 {
+  #artistMainWrapper .artist1,
+  #artistMainWrapper .artist2,
+  #artistMainWrapper .artist3 {
     width: 80%;
     height: auto;
     display: block;
@@ -1781,7 +1793,7 @@ footer p.legal {
     justify-content: center;
     align-items: center;
     z-index: 1100;
-    pointer-events: none;
+    cursor: pointer;
     overflow: visible;
   }
   #portfolioLogo img {
@@ -1912,32 +1924,43 @@ footer p.legal {
     margin-bottom: 0.75rem;
     padding: 3rem 0 0 0;
   }
-  #three #dev, #three #design {
+  #three #dev,
+  #three #design {
     display: flex;
     flex: 1 1 420px;
     max-width: 45%;
     flex-direction: column;
   }
-  #three #dev h2, #three #design h2 {
+  #three #dev h2,
+  #three #design h2 {
     font-weight: 500;
     margin-bottom: 1rem;
     color: white;
   }
-  #three #dev #designBorder, #three #dev #devBorder, #three #design #designBorder, #three #design #devBorder {
+  #three #dev #designBorder,
+  #three #dev #devBorder,
+  #three #design #designBorder,
+  #three #design #devBorder {
     width: 90%;
     max-width: none;
     border-radius: 10px;
     padding: 0;
     border: 3px solid white;
   }
-  #three #dev #designBorder img, #three #dev #devBorder img, #three #design #designBorder img, #three #design #devBorder img {
+  #three #dev #designBorder img,
+  #three #dev #devBorder img,
+  #three #design #designBorder img,
+  #three #design #devBorder img {
     display: block;
     width: 100%;
     height: auto;
     margin: 0 auto;
     border-radius: 10px 10px 0 0;
   }
-  #three #dev #designBorder ul li, #three #dev #devBorder ul li, #three #design #designBorder ul li, #three #design #devBorder ul li {
+  #three #dev #designBorder ul li,
+  #three #dev #devBorder ul li,
+  #three #design #designBorder ul li,
+  #three #design #devBorder ul li {
     color: white;
     font-size: 1.4rem;
     padding: 0.5rem 0;
@@ -1980,40 +2003,76 @@ footer p.legal {
     height: clamp(160px, 22vw, 220px);
   }
   /* --------------------------- For Loop for Case study pages --------------------------- */
-  #mediaMainWrapper .large-1, #portfolioMainWrapper .large-1, #artistMainWrapper .large-1, #utahMainWrapper .large-1 {
+  #mediaMainWrapper .large-1,
+  #portfolioMainWrapper .large-1,
+  #artistMainWrapper .large-1,
+  #utahMainWrapper .large-1 {
     flex-basis: 8.3333333333%;
   }
-  #mediaMainWrapper .large-2, #portfolioMainWrapper .large-2, #artistMainWrapper .large-2, #utahMainWrapper .large-2 {
+  #mediaMainWrapper .large-2,
+  #portfolioMainWrapper .large-2,
+  #artistMainWrapper .large-2,
+  #utahMainWrapper .large-2 {
     flex-basis: 16.6666666667%;
   }
-  #mediaMainWrapper .large-3, #portfolioMainWrapper .large-3, #artistMainWrapper .large-3, #utahMainWrapper .large-3 {
+  #mediaMainWrapper .large-3,
+  #portfolioMainWrapper .large-3,
+  #artistMainWrapper .large-3,
+  #utahMainWrapper .large-3 {
     flex-basis: 25%;
   }
-  #mediaMainWrapper .large-4, #portfolioMainWrapper .large-4, #artistMainWrapper .large-4, #utahMainWrapper .large-4 {
+  #mediaMainWrapper .large-4,
+  #portfolioMainWrapper .large-4,
+  #artistMainWrapper .large-4,
+  #utahMainWrapper .large-4 {
     flex-basis: 33.3333333333%;
   }
-  #mediaMainWrapper .large-5, #portfolioMainWrapper .large-5, #artistMainWrapper .large-5, #utahMainWrapper .large-5 {
+  #mediaMainWrapper .large-5,
+  #portfolioMainWrapper .large-5,
+  #artistMainWrapper .large-5,
+  #utahMainWrapper .large-5 {
     flex-basis: 41.6666666667%;
   }
-  #mediaMainWrapper .large-6, #portfolioMainWrapper .large-6, #artistMainWrapper .large-6, #utahMainWrapper .large-6 {
+  #mediaMainWrapper .large-6,
+  #portfolioMainWrapper .large-6,
+  #artistMainWrapper .large-6,
+  #utahMainWrapper .large-6 {
     flex-basis: 50%;
   }
-  #mediaMainWrapper .large-7, #portfolioMainWrapper .large-7, #artistMainWrapper .large-7, #utahMainWrapper .large-7 {
+  #mediaMainWrapper .large-7,
+  #portfolioMainWrapper .large-7,
+  #artistMainWrapper .large-7,
+  #utahMainWrapper .large-7 {
     flex-basis: 58.3333333333%;
   }
-  #mediaMainWrapper .large-8, #portfolioMainWrapper .large-8, #artistMainWrapper .large-8, #utahMainWrapper .large-8 {
+  #mediaMainWrapper .large-8,
+  #portfolioMainWrapper .large-8,
+  #artistMainWrapper .large-8,
+  #utahMainWrapper .large-8 {
     flex-basis: 66.6666666667%;
   }
-  #mediaMainWrapper .large-9, #portfolioMainWrapper .large-9, #artistMainWrapper .large-9, #utahMainWrapper .large-9 {
+  #mediaMainWrapper .large-9,
+  #portfolioMainWrapper .large-9,
+  #artistMainWrapper .large-9,
+  #utahMainWrapper .large-9 {
     flex-basis: 75%;
   }
-  #mediaMainWrapper .large-10, #portfolioMainWrapper .large-10, #artistMainWrapper .large-10, #utahMainWrapper .large-10 {
+  #mediaMainWrapper .large-10,
+  #portfolioMainWrapper .large-10,
+  #artistMainWrapper .large-10,
+  #utahMainWrapper .large-10 {
     flex-basis: 83.3333333333%;
   }
-  #mediaMainWrapper .large-11, #portfolioMainWrapper .large-11, #artistMainWrapper .large-11, #utahMainWrapper .large-11 {
+  #mediaMainWrapper .large-11,
+  #portfolioMainWrapper .large-11,
+  #artistMainWrapper .large-11,
+  #utahMainWrapper .large-11 {
     flex-basis: 91.6666666667%;
   }
-  #mediaMainWrapper .large-12, #portfolioMainWrapper .large-12, #artistMainWrapper .large-12, #utahMainWrapper .large-12 {
+  #mediaMainWrapper .large-12,
+  #portfolioMainWrapper .large-12,
+  #artistMainWrapper .large-12,
+  #utahMainWrapper .large-12 {
     flex-basis: 100%;
   }
   /* --------------------------- bookstore.HTML PAGE --------------------------- */

@@ -2,6 +2,7 @@
 #navWrapper {
   ul {
     padding: .5rem 0;
+
     li {
       a {
         svg {
@@ -25,6 +26,7 @@
     width: 3.6rem;
     height: 3.6rem;
     padding: 0.3rem;
+    cursor: pointer;
 
     img {
       width: 100%;
@@ -83,8 +85,10 @@ section {
 
 /* --------------------------- SECTION THREE --------------------------- */
 #three {
+
   #dev,
   #design {
+
     #designBorder,
     #devBorder {
       width: 60%;
@@ -108,6 +112,7 @@ section {
       margin-top: 20px;
       padding-top: 20px;
       max-height: fit-content;
+
       img {
         width: 70%;
         height: auto;
@@ -131,18 +136,18 @@ footer div {
     column-gap: 1rem;
     gap: 1rem;
 
-    > * {
+    >* {
       grid-column: 1 / -1;
     }
 
-    > h2,
-    > h3,
-    > p {
+    >h2,
+    >h3,
+    >p {
       flex: 0 0 100%;
       padding: 0 1rem;
     }
 
-    > .swiper {
+    >.swiper {
       flex: 0 0 600px;
       width: 600px;
       max-width: 600px;
@@ -173,7 +178,7 @@ footer div {
       gap: 1rem;
       padding: 0 1rem;
 
-      > img {
+      >img {
         flex: 0 1 calc(33.333% - 1rem);
         max-width: 240px;
         width: 100%;
@@ -183,7 +188,7 @@ footer div {
     }
 
     // media4.webp and media5.webp (the two images after firstThreeRow paragraph)
-    > .firstThreeRow + p + img {
+    >.firstThreeRow+p+img {
       grid-column: 1;
       justify-self: center;
       width: 280px;
@@ -192,7 +197,7 @@ footer div {
       margin: 0;
     }
 
-    > .firstThreeRow + p + img + img {
+    >.firstThreeRow+p+img+img {
       grid-column: 2;
       justify-self: center;
       width: 280px;
@@ -225,7 +230,7 @@ footer div {
         }
       }
 
-      > img {
+      >img {
         flex: 0 0 380px;
         max-width: 380px;
         width: 380px;
@@ -255,23 +260,23 @@ footer div {
         height: 0;
       }
 
-      > img {
+      >img {
         flex: 0 0 170px;
         width: 170px;
         height: auto;
         margin: 0;
       }
 
-      > img:nth-child(1),
-      > img:nth-child(3),
-      > img:nth-child(4) {
+      >img:nth-child(1),
+      >img:nth-child(3),
+      >img:nth-child(4) {
         height: 204px;
         object-fit: cover;
         object-position: center top;
       }
     }
 
-    > img {
+    >img {
       flex: 0 1 calc(33.333% - 1rem);
       max-width: 240px;
       width: 100%;
@@ -280,17 +285,17 @@ footer div {
     }
 
     // Put My Final Results + My Discoveries text on the left.
-    > .turningPointRow + h3,
-    > .turningPointRow + h3 + p,
-    > .turningPointRow + h3 + p + .swiper + h3,
-    > .turningPointRow + h3 + p + .swiper + h3 + p {
+    >.turningPointRow+h3,
+    >.turningPointRow+h3+p,
+    >.turningPointRow+h3+p+.swiper+h3,
+    >.turningPointRow+h3+p+.swiper+h3+p {
       grid-column: 1;
       max-width: none;
       padding-right: 1rem;
     }
 
     // Keep swiper on the right under media10 and beside both text blocks.
-    > .turningPointRow + h3 + p + .swiper {
+    >.turningPointRow+h3+p+.swiper {
       grid-column: 2;
       grid-row: span 4;
       width: 380px;
@@ -322,8 +327,11 @@ footer div {
 
   //Create the For Loop
   @for $i from 1 through 12 {
-  $w: calc($i /12) *100%;
-  .medium-#{$i} {flex-basis: $w;}
+    $w: calc($i /12) *100%;
+
+    .medium-#{$i} {
+      flex-basis: $w;
+    }
   }
 }
 
@@ -333,8 +341,11 @@ footer div {
 
   //Create the For Loop
   @for $i from 1 through 12 {
-  $w: calc($i /12) *100%;
-  .medium-#{$i} {flex-basis: $w;}
+    $w: calc($i /12) *100%;
+
+    .medium-#{$i} {
+      flex-basis: $w;
+    }
   }
 }
 
@@ -344,16 +355,22 @@ footer div {
 
   //Create the For Loop
   @for $i from 1 through 12 {
-  $w: calc($i /12) *100%;
-  .medium-#{$i} {flex-basis: $w;}
+    $w: calc($i /12) *100%;
+
+    .medium-#{$i} {
+      flex-basis: $w;
+    }
   }
 
-  .artist1, .artist2, .artist3 {
+  .artist1,
+  .artist2,
+  .artist3 {
     width: 80%;
     height: auto;
     display: block;
     margin: 0 auto;
   }
+
   .artist4 {
     display: block;
     width: 40%;
@@ -368,8 +385,11 @@ footer div {
 
   //Create the For Loop
   @for $i from 1 through 12 {
-  $w: calc($i /12) *100%;
-  .medium-#{$i} {flex-basis: $w;}
+    $w: calc($i /12) *100%;
+
+    .medium-#{$i} {
+      flex-basis: $w;
+    }
   }
 
 
@@ -380,7 +400,7 @@ footer div {
     margin: 0 auto;
   }
 
-    figure {
+  figure {
     margin: 0;
     width: auto;
 
@@ -390,12 +410,12 @@ footer div {
       height: auto;
       margin: 0 auto;
     }
-    
-  figcaption {
-    font-style: italic;
-    font-size: .8rem;
-    text-align: left;
-  }
+
+    figcaption {
+      font-style: italic;
+      font-size: .8rem;
+      text-align: left;
+    }
   }
 }
 
@@ -405,7 +425,10 @@ footer div {
 
   //Create the For Loop
   @for $i from 1 through 12 {
-  $w: calc($i /12) *100%;
-  .medium-#{$i} {flex-basis: $w;}
+    $w: calc($i /12) *100%;
+
+    .medium-#{$i} {
+      flex-basis: $w;
+    }
   }
 }

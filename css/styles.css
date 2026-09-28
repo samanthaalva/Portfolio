@@ -590,7 +590,7 @@ main h1 {
   max-width: none;
   border-radius: 10px;
   padding: 0;
-  border: 3px solid white;
+  border: 1px solid white;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
 }
 #three #dev #designBorder img,
@@ -608,7 +608,7 @@ main h1 {
 #three #design #designBorder ul li,
 #three #design #devBorder ul li {
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   padding: 0.5rem 0;
   font-family: "Josefin Sans", serif;
 }
@@ -1823,7 +1823,7 @@ footer p.legal {
     align-items: center;
   }
   #one button {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     padding: 0.9rem 3rem;
   }
   #one h1 {
@@ -1831,7 +1831,9 @@ footer p.legal {
     margin-bottom: 0;
   }
   #one h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
+    font-family: "Josefin Sans", serif;
+    font-weight: 300;
   }
   .social a {
     padding: 10px;
@@ -1920,9 +1922,9 @@ footer p.legal {
     color: white;
     text-align: center;
     font-weight: 500;
-    margin-top: 0.5rem;
-    margin-bottom: 0.75rem;
-    padding: 3rem 0 0 0;
+    margin-top: 0.2rem;
+    margin-bottom: 0.1rem;
+    padding: 2rem 0 0 0;
   }
   #three #dev,
   #three #design {
@@ -1945,7 +1947,7 @@ footer p.legal {
     max-width: none;
     border-radius: 10px;
     padding: 0;
-    border: 3px solid white;
+    border: 1px solid white;
   }
   #three #dev #designBorder img,
   #three #dev #devBorder img,
@@ -1962,7 +1964,7 @@ footer p.legal {
   #three #design #designBorder ul li,
   #three #design #devBorder ul li {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding: 0.5rem 0;
     font-family: "Josefin Sans", serif;
   }

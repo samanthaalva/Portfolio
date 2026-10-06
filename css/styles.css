@@ -954,7 +954,7 @@ footer p.legal {
 }
 #artistMainWrapper .header h1 {
   margin-top: 0;
-  padding-top: 1rem;
+  padding-top: 5rem;
 }
 #artistMainWrapper h2 {
   margin: 0 1rem;
@@ -2113,5 +2113,10 @@ footer p.legal {
     height: auto;
     display: block;
     margin: 0 auto;
+  }
+  /* --------------------------- artist.HTML PAGE --------------------------- */
+  #artistMainWrapper .header h1 {
+    margin-top: 0;
+    padding-top: 2rem;
   }
 }

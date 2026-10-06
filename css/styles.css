@@ -1159,7 +1159,7 @@ footer p.legal {
 }
 #utahMainWrapper .hero {
   position: relative;
-  min-height: clamp(230px, 30vw, 260px);
+  min-height: clamp(230px, 30vw, 230px);
   overflow: hidden;
   display: flex;
   flex-direction: column;

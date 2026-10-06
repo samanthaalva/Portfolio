@@ -634,8 +634,9 @@ main h1 {
   height: auto;
 }
 #four #caseStudies div h2 {
-  margin: 2rem 0 0;
-  line-height: 30px;
+  font-size: 18px;
+  margin: 1rem 0 0;
+  line-height: 22px;
   font-weight: 300;
   font-family: "Josefin Sans", serif;
 }

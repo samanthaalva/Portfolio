@@ -1010,6 +1010,11 @@ footer p.legal {
   font-weight: 300;
   font-size: 0.9rem;
 }
+#artistMainWrapper .hero h1,
+#artistMainWrapper .hero h3 {
+  color: black;
+  text-shadow: none;
+}
 #artistMainWrapper > main {
   position: relative;
   z-index: 1;

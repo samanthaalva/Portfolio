@@ -648,6 +648,12 @@ footer {
 
   .hero {
     @include hero-layout;
+
+    h1,
+    h3 {
+      color: black;
+      text-shadow: none;
+    }
   }
 
   >main {

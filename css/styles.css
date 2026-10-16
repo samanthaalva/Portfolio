@@ -761,6 +761,9 @@ footer p.legal {
   margin: 0;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
+#mediaMainWrapper .hero h1 {
+  font-size: 1.2rem;
+}
 #mediaMainWrapper .hero h3 {
   margin-top: 0.4rem;
   font-family: "Josefin Slab", serif;
@@ -769,7 +772,6 @@ footer p.legal {
 }
 #mediaMainWrapper .hero h1 {
   font-weight: 100;
-  font-size: 1.2rem;
 }
 #mediaMainWrapper img {
   width: 100%;
@@ -902,6 +904,9 @@ footer p.legal {
   margin: 0;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
+#portfolioMainWrapper .hero h1 {
+  font-size: 1.2rem;
+}
 #portfolioMainWrapper .hero h3 {
   margin-top: 0.4rem;
   font-family: "Josefin Slab", serif;
@@ -1003,6 +1008,9 @@ footer p.legal {
   color: white;
   margin: 0;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+#artistMainWrapper .hero h1 {
+  font-size: 1.2rem;
 }
 #artistMainWrapper .hero h3 {
   margin-top: 0.4rem;
@@ -1122,6 +1130,9 @@ footer p.legal {
   color: white;
   margin: 0;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+#bookstoreMainWrapper .hero h1 {
+  font-size: 1.2rem;
 }
 #bookstoreMainWrapper .hero h3 {
   margin-top: 0.4rem;
@@ -1289,14 +1300,14 @@ footer p.legal {
   margin: 0;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
+#utahMainWrapper .hero h1 {
+  font-size: 1.2rem;
+}
 #utahMainWrapper .hero h3 {
   margin-top: 0.4rem;
   font-family: "Josefin Slab", serif;
   font-weight: 300;
   font-size: 0.9rem;
-}
-#utahMainWrapper .hero h1 {
-  font-size: 1.2rem;
 }
 #utahMainWrapper img {
   width: 100%;
@@ -2141,7 +2152,10 @@ footer p.legal {
   }
   /* --------------------------- MEDIA.HTML PAGE --------------------------- */
   #mediaMainWrapper .hero h1,
-  #utahMainWrapper .hero h1 {
+  #utahMainWrapper .hero h1,
+  #portfolioMainWrapper .hero h1,
+  #artistMainWrapper .hero h1,
+  #bookstoreMainWrapper .hero h1 {
     font-size: 1.5rem;
   }
   #mediaMainWrapper .hero h3,

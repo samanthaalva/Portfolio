@@ -18,7 +18,7 @@ $utahFont: 'Montserrat', sans-serif;
 
 $gutter: 10px;
 
-// Hero measurements shared by every case study page (h1 fonts are set per page)
+// Hero layout and sizing shared by every case study page
 @mixin hero-layout {
     position: relative;
     min-height: clamp(230px, 30vw, 260px);
@@ -47,6 +47,10 @@ $gutter: 10px;
         color: white;
         margin: 0;
         text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+        font-size: 1.2rem;
     }
 
     h3 {

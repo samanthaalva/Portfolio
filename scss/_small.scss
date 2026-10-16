@@ -491,7 +491,6 @@ footer {
 
     h1 {
       font-weight: 100;
-      font-size: 1.2rem;
     }
   }
 
@@ -863,10 +862,6 @@ footer {
 
   .hero {
     @include hero-layout;
-
-    h1 {
-      font-size: 1.2rem;
-    }
   }
 
   img {

@@ -304,16 +304,15 @@ footer div {
 }
 
 /* --------------------------- MEDIA.HTML PAGE --------------------------- */
-#mediaMainWrapper .hero h1,
-#utahMainWrapper .hero h1 {
-    font-size: 1.5rem;
-}
-
 #mediaMainWrapper,
 #utahMainWrapper,
 #portfolioMainWrapper,
 #artistMainWrapper,
 #bookstoreMainWrapper {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
     .hero h3 {
         font-size: 1.2rem;
     }

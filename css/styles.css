@@ -713,6 +713,13 @@ footer p.legal {
 #bookstoreMainWrapper p {
   line-height: 1.4;
 }
+#mediaMainWrapper .h2Top,
+#utahMainWrapper .h2Top,
+#portfolioMainWrapper .h2Top,
+#artistMainWrapper .h2Top,
+#bookstoreMainWrapper .h2Top {
+  padding-top: 1.5rem;
+}
 
 /* --------------------------- MEDIA.HTML PAGE --------------------------- */
 #mediaMainWrapper main {
@@ -1003,17 +1010,6 @@ footer p.legal {
   font-weight: 300;
   font-size: 0.9rem;
 }
-#artistMainWrapper::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 50%;
-  background-color: rgba(211, 211, 211, 0.5);
-  z-index: 0;
-  pointer-events: none;
-}
 #artistMainWrapper > main {
   position: relative;
   z-index: 1;
@@ -1085,7 +1081,6 @@ footer p.legal {
 #artistMainWrapper .artist1,
 #artistMainWrapper .artist2,
 #artistMainWrapper .artist3 {
-  width: 0%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -1477,6 +1472,13 @@ footer p.legal {
   #bookstoreMainWrapper .hero h3 {
     padding-top: 0.6rem;
   }
+  #mediaMainWrapper .column > img:not([class]),
+  #utahMainWrapper .column > img:not([class]),
+  #portfolioMainWrapper .column > img:not([class]),
+  #bookstoreMainWrapper .column > img:not([class]) {
+    max-height: 24rem;
+    object-fit: contain;
+  }
   #mediaMain #content {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1712,6 +1714,17 @@ footer p.legal {
     flex-basis: 100%;
   }
   /* --------------------------- Artist.HTML PAGE --------------------------- */
+  #artistMainWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: rgba(211, 211, 211, 0.5);
+    z-index: 0;
+    pointer-events: none;
+  }
   #artistMainWrapper .medium-1 {
     flex-basis: 8.3333333333%;
   }
@@ -1753,6 +1766,8 @@ footer p.legal {
   #artistMainWrapper .artist3 {
     width: 80%;
     height: auto;
+    max-height: 24rem;
+    object-fit: contain;
     display: block;
     margin: 0 auto;
   }
@@ -1760,6 +1775,8 @@ footer p.legal {
     display: block;
     width: 40%;
     height: auto;
+    max-height: 24rem;
+    object-fit: contain;
     margin: 0 auto;
   }
   /* --------------------------- Bookstore.HTML PAGE --------------------------- */

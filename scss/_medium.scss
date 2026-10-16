@@ -139,6 +139,16 @@ footer div {
   }
 }
 
+// Classed images (media .img6-9, avengers) keep their own sizing
+#mediaMainWrapper,
+#utahMainWrapper,
+#portfolioMainWrapper,
+#bookstoreMainWrapper {
+  .column>img:not([class]) {
+    max-height: 24rem;
+    object-fit: contain;
+  }
+}
 
 
 
@@ -366,6 +376,18 @@ footer div {
 
 #artistMainWrapper {
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: rgba(211, 211, 211, 0.5);
+    z-index: 0;
+    pointer-events: none;
+  }
+
   //Create the For Loop
   @for $i from 1 through 12 {
     $w: calc($i /12) *100%;
@@ -380,6 +402,8 @@ footer div {
   .artist3 {
     width: 80%;
     height: auto;
+    max-height: 24rem;
+    object-fit: contain;
     display: block;
     margin: 0 auto;
   }
@@ -388,6 +412,8 @@ footer div {
     display: block;
     width: 40%;
     height: auto;
+    max-height: 24rem;
+    object-fit: contain;
     margin: 0 auto;
   }
 }
